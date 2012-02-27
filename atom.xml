@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Phx Tag Soup</title>
+  <link href="http://TagSoup.github.com/atom.xml" rel="self"/>
+  <link href="http://TagSoup.github.com/"/>
+  <updated>2012-02-27T09:44:54-07:00</updated>
+  <id>http://TagSoup.github.com/</id>
+  <author>
+    <name>Phx Tag Soup</name>
+    
+  </author>
+
+  
+  <entry>
+    <title>I&#8217;ll Show You Mine if You Show Me Yours</title>
+    <link href="http://TagSoup.github.com/blog/2012/02/26/ill-show-you-mine-if-you-show-me-yours/"/>
+    <updated>2012-02-26T22:06:00-07:00</updated>
+    <id>http://TagSoup.github.com/blog/2012/02/26/ill-show-you-mine-if-you-show-me-yours</id>
+    <content type="html">&lt;h3&gt;Day 3 of the 30 Day Challenge&lt;/h3&gt;
+
+&lt;p&gt;Working in the default themed Terminal all day will make any sane (no such thing) developer cry. I&amp;#8217;m sure we each have our own favorite customizations. Me? I&amp;#8217;m a zsh sort of guy. Using it for a while (thanks &lt;a href=&quot;https://twitter.com/#!/slashclee&quot;&gt;@slashclee&lt;/a&gt;) I find myself switching up the themes each time I configure or reconfigure a computer. First thing&amp;#8217;s first though, I&amp;#8217;m using a mac. I&amp;#8217;m not a &amp;#8220;fan boy&amp;#8221;, I&amp;#8217;m just comfortable with it at this point. So if you&amp;#8217;re wanting to get this going on your Linux system, there are links that can help you&amp;#8230; I&amp;#8217;m sorry, but I can&amp;#8217;t help.&lt;/p&gt;
+
+&lt;p&gt;Enough words, how about some hawt pics?
+&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/zsh.png&quot; width=&quot;800&quot;&gt;&lt;/p&gt;
+
+&lt;h4&gt;What are you staring at?&lt;/h4&gt;
+
+&lt;p&gt;Well, that&amp;#8217;s my desktop, with some icons, a nice desktop pic and of course my terminal. I like the way it all looks. How come your Terminal doesn&amp;#8217;t look like that? Maybe I can help. If you&amp;#8217;re running OSX Lion and haven&amp;#8217;t already switched the default bash shell to zsh, you might want to do that now. Why switch? There are a ton of articles out on google explaning why people like it so much. For me, it comes down to a few basic benefits:&lt;/p&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Powerful tab completetion&lt;/li&gt;
+    &lt;li&gt;Styling&lt;/li&gt;
+    &lt;li&gt;Plugins&lt;/li&gt;
+    &lt;li&gt;Auto correct&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h3&gt;Switching to zsh&lt;/h3&gt;
+
+&lt;p&gt;This part is easy, just go to your System Preferences and click on Users &amp;amp; Groups. Right click, or Control-Click on your username and open up the Advanced Options. If you&amp;#8217;re not able to Right-Click or Control-Click on your username, make sure the lock icon in the bottom left of the window is unlocked. Just click on it to toggle. Look for the dropdown for Login Shell and choose &lt;code&gt;/bin/zsh&lt;/code&gt;. Fin&lt;/p&gt;
+
+&lt;h3&gt;Oh My ZSH&lt;/h3&gt;
+
+&lt;p&gt;The next very handy tool that goes hand in hand with zsh is &lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh&quot;&gt;Oh-My-Zsh&lt;/a&gt;. Oh-My-Zsh really starts to open up the &amp;#8220;Styling&amp;#8221; and &amp;#8220;Plugin&amp;#8221; benefits I brought up earlier. Please, take the time to check out the repo and check out everything is has to offer. I&amp;#8217;m not going to try to get into all of it on this post.&lt;/p&gt;
+
+&lt;h3&gt;Customizing Terminal&lt;/h3&gt;
+
+&lt;p&gt;I&amp;#8217;m using &lt;a href=&quot;https://github.com/tomislav/osx-lion-terminal.app-colors-solarized&quot;&gt;Tomislav Filipčić&amp;#8217;s Solarized theme&lt;/a&gt; for my Terminal. Grab that, unzip it and run the Solarized Dark.terminal file. This will create a new theme based on the ever popular &lt;a href=&quot;http://ethanschoonover.com/solarized&quot;&gt;Solarized by Ethan Schoonover&lt;/a&gt;. Select Solarized Dark under Terminal &gt; Preferences &gt; Settings.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;center&quot; src=&quot;http://TagSoup.github.com/images/solarized.dark.png&quot; width=&quot;500&quot; title=&quot;&#8217;term bo&#8217;&quot; &gt;&lt;/p&gt;
+
+&lt;h3&gt;Customizing Oh-My-Zsh&lt;/h3&gt;
+
+&lt;p&gt;Most of the customizations will be set in your .zshrc file. I&amp;#8217;m assuming your Terminal is already open and hopefully you already your shell set to zsh. Type &lt;code&gt;~/.&lt;/code&gt; and press &lt;code&gt;Tab&lt;/code&gt;. Autocomplete, yah, no HUGE difference yet. Press &lt;code&gt;Tab&lt;/code&gt; again. Yay, our first noticeable change. You can Tab-cycle through the files/dirs. Look for &lt;code&gt;.zshrc&lt;/code&gt;.  This is your zsh profile. Look for the line that starts with &lt;code&gt;ZSH_THEME=&lt;/code&gt;. This is where we are going to set our theme. &lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh/wiki/themes&quot;&gt;Check out some of the zsh themes.&lt;/a&gt; I have mine set to blinks. But it&amp;#8217;s not the default blinks. I have done some tweaking on it. Since this section is about customizing, let&amp;#8217;s get to it.&lt;/p&gt;
+
+&lt;div&gt;&lt;script src=&#8217;https://gist.github.com/1921784.js?file=zsh&#8217;&gt;&lt;/script&gt;
+&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;# https://github.com/blinks zsh theme
+
+function _prompt_char() {
+  if $(git rev-parse &#8211;is-inside-work-tree &amp;gt;/dev/null 2&amp;gt;&amp;amp;1); then
+    echo &amp;quot;%{%F{blue}%}±%{%f%k%b%}&amp;quot;
+  else
+    echo &#8217; &#8217;
+  fi
+}
+
+#ZSH_THEME_GIT_PROMPT_PREFIX=&amp;quot; [%{%B%F{blue}%}&amp;quot;
+#ZSH_THEME_GIT_PROMPT_SUFFIX=&amp;quot;%{%f%k%b%K{black}%B%F{green}%}]&amp;quot;
+#ZSH_THEME_GIT_PROMPT_DIRTY=&amp;quot; %{%F{red}%}*%{%f%k%b%}&amp;quot;
+#ZSH_THEME_GIT_PROMPT_CLEAN=&amp;quot;&amp;quot;
+
+project_pwd() {
+  echo $PWD | sed -e &amp;quot;s/\/Users\/$USER/~/&amp;quot; -e &amp;quot;s/~\/projects\/\([^\/]*\)\/current/&#92;1/&amp;quot; -e &amp;quot;s/~\/Sites\/\([^\/]*\)\/current/http:\/\/&#92;1/&amp;quot;
+}
+
+ruby_version() {
+  echo &amp;quot; $(ruby -v | awk &#8216;{print $2}&#8217;)&amp;quot;
+}
+
+in_git_repo() {
+ [ $PWD != &amp;quot;/Users/$HOME&amp;quot; ] &amp;amp;&amp;amp; [ -d &#8216;.git&#8217; ]
+}
+
+git_parse_branch() {
+  sed -e &#8216;s/^.*refs\/heads\///&#8217; &#8216;.git/HEAD&#8217;
+}
+
+git_head_commit_id() {
+  cut -c 1-7 &amp;quot;.git/refs/heads/`git_parse_branch`&amp;quot;
+}
+
+git_cwd_dirty() {
+  [[ `git ls-files -m` == &#8221; ]] || echo &#8217; +&#8217;
+}
+
+
+git_cwd_info() {
+  if in_git_repo; then
+    echo -n &amp;quot; %{\e[1;35m%}`git_parse_branch`%{\e[0;35m%}@%{\e[1;35m%}`git_head_commit_id&#8220;git_cwd_dirty`%{\e[1;35m%}&amp;quot;
+  fi
+}
+
+export PROMPT=$&#8217;%{\e[1;34m%}%n@\e[1;34m%M%{\e[0m%}
+%{\e[0;%(?.32.31)m%}&amp;gt;%{\e[0m%} &#8217;
+
+export RPROMPT=$&#8217;%{\e[1;31m%}$(project_pwd)%{\e[0;34m%}$(ruby_version)$(git_cwd_info)%{\e[0m%}&#8217;
+
+#Original blinks prompt
+#PROMPT=&#8217;
+#%{%K{black}%}$(_prompt_char)%{%K{black}%} %#%{%f%k%b%} &#8217;
+
+#RPROMPT=&#8217;%{%b%F{yellow}%K{black}%}%~%{%B%F{green}%}$(git_prompt_info)&#8217;
+&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/div&gt;
+
+
+&lt;p&gt;There&amp;#8217;s a lot going on here. A lot. Without going too crazy, let&amp;#8217;s look at one small chunk to see what it&amp;#8217;s doing.&lt;/p&gt;
+
+&lt;figure class=&#8217;code&#8217;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre class=&quot;line-numbers&quot;&gt;&lt;span class=&#8217;line-number&#8217;&gt;1&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;2&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;3&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;4&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;&lt;code class=&#8221;&gt;&lt;span class=&#8217;line&#8217;&gt;export PROMPT=$&#8217;%{\e[1;34m%}%n@\e[1;34m%M%{\e[0m%}
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;%{\e[0;%(?.32.31)m%}&amp;gt;%{\e[0m%} &#8217;
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;export RPROMPT=$&#8217;%{\e[1;31m%}$(project_pwd)%{\e[0;34m%}$(ruby_version)$(git_cwd_info)%{\e[0m%}&#8217;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;So zsh let&amp;#8217;s have have a &amp;#8220;left&amp;#8221; (PROMPT) and &amp;#8220;right&amp;#8221; (RPROMPT) side of the prompt. On the left (again PROMPT), I like it nice and plain. So we&amp;#8217;re outputting the username@system-name. Then we have a line break where our prompt will be. And on the right hand side of the screen (RPROMPT), we have even more useful info. We&amp;#8217;re displaying the current directory, the version of Ruby, the current git branch and SHA. I have added some fun colors to it, cause you know, colors are good mmmkay.&lt;/p&gt;
+
+&lt;h3&gt;On to plugins&lt;/h3&gt;
+
+&lt;p&gt;The plugins in zsh are really useful. They will extend autocompletion for you and set up some aliases for you. Back in your &lt;code&gt;~/.zshrc&lt;/code&gt; file look for the line that starts with:&lt;/p&gt;
+
+&lt;figure class=&#8217;code&#8217;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre class=&quot;line-numbers&quot;&gt;&lt;span class=&#8217;line-number&#8217;&gt;1&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;2&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;&lt;code class=&#8221;&gt;&lt;span class=&#8217;line&#8217;&gt;# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;# Example format: plugins=(rails git textmate ruby lighthouse)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;The plugins I have installed are git, github, node, gem, rails, ant. It looks like this:&lt;/p&gt;
+
+&lt;figure class=&#8217;code&#8217;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre class=&quot;line-numbers&quot;&gt;&lt;span class=&#8217;line-number&#8217;&gt;1&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;2&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;3&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;&lt;code class=&#8221;&gt;&lt;span class=&#8217;line&#8217;&gt;# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;# Example format: plugins=(rails git textmate ruby lighthouse)
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;plugins=(git github node npm gem rails ant)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;Most of these I don&amp;#8217;t use to their fullest. But you can &lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/git/git.plugin.zsh&quot;&gt;take a look at some of the things the git plugin is doing for us.&lt;/a&gt; If you&amp;#8217;re using git a lot, some of the aliases will save you some time. &lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins&quot;&gt;Check out all of the available plugins for zsh.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;m by no means a shell, or zsh expert. I&amp;#8217;m still learning a ton as I go. The day I spent getting Solarized set up and the prompt on the right caused big head aches for me. I have a whole list of git aliases, and standard aliases to share that will tie in nicely with this post but, this post has already gotten much longer than I like. TL:DR. If you have any questions, please feel free to ask. I will do my best in answering or finding an answer. Use the comments below or msg me on github.&lt;/p&gt;
+
+&lt;h3&gt;Hepful Links&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh&quot;&gt;Oh My ZSH github repo&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.zsh.org/&quot;&gt;ZSH Homepage&lt;/a&gt; - A little overwhelming&lt;br /&gt;
+&lt;a href=&quot;http://stevelosh.com/blog/2010/02/my-extravagant-zsh-prompt/&quot;&gt;Steve&amp;#8217;s Extravagant Zsh Prompt&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://twitter.com/#!/ohmyzsh&quot;&gt;Oh My ZSH Twitter&lt;/a&gt; - Blue birds&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;clearfix&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/whip-it.jpg&quot; width=&quot;60&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/whip-it.jpg&quot; width=&quot;60&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/whip-it.jpg&quot; width=&quot;60&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/whip-it.jpg&quot; width=&quot;60&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/whip-it.jpg&quot; width=&quot;60&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/whip-it.jpg&quot; width=&quot;60&quot;&gt;
+&lt;/div&gt;
+
+
+
+</content>
+  </entry>
+  
+  <entry>
+    <title>Optimize My Stuff and Junk</title>
+    <link href="http://TagSoup.github.com/blog/2012/02/25/optimize-my-stuff-and-junk/"/>
+    <updated>2012-02-25T20:28:00-07:00</updated>
+    <id>http://TagSoup.github.com/blog/2012/02/25/optimize-my-stuff-and-junk</id>
+    <content type="html">&lt;h3&gt;Day 2 of the 30 Day Challenge&lt;/h3&gt;
+
+&lt;p&gt;One of the most important things that you can do for your site is implementing  a good SEO strategy. Whether you are a designer, developer or both, you should have a good understanding of SEO and how to make it work for your site.&lt;/p&gt;
+
+&lt;p&gt;With out getting into the history of SEO, I want to give you a brief overview. First off, SEO stands for Search Engine Optimization. What does this mean? In short its how you as a web professional translate the content of your site to search engines.&lt;/p&gt;
+
+&lt;p&gt;How does this work? The search engine sends out something called a “spider” (aka bot or robot) who will crawl your site (if the spider knows about it) and take the information that they can read back to their search engine. At this point your web page would be considered “indexed” in the search engine. Once your site is indexed then there are many factors that will go into what position you will show up in depending on the keyword that is typed into the search engine.&lt;/p&gt;
+
+&lt;p&gt;Whats a good strategy to follow? The first thing to know about SEO is that “Content is King”. Don’t try to chase algorithm changes in Google or Bing. Your time will be more productive if you concentrate on keeping good and relevant content on your site. Have good content and change it often. Good SEO will get people to your site but good content will keep them there and coming back.&lt;/p&gt;
+
+&lt;p&gt;Do your keyword research. Find out what people are searching for in your industry and integrate these into your content. The key word here is integrate not shoe-horn. Spammy content will just frustrate and confuse your visitors.&lt;/p&gt;
+
+&lt;p&gt;There are many gems that can come out of your keyword research. Imagine you run a ticketing website that does well for the Keyword “Bob Dylan Tickets”. You are doing your keyword research and notice that a lot of people are searching for Bob Dylan tickets in Minnesota. You can optimize your Bob Dylan page for Minnesota but that would change your rankings for your Bob Dylan results. Instead if you create a Bob Dylan Minnesota page with information specifically about the venues and performances by Dylan in Minnesota. This will allow you to keep your good standings in “Bob Dylan Tickets” results as well as getting you another page in the results that targeted that large demographic of visitors. A caveat to this is that you would want to use this sparingly. Too much of this and your content can become unmanageable.&lt;/p&gt;
+
+&lt;p&gt;Take a look at your site and analyze your content and other items that can factor into your SEO. I have broken up the factors for SEO into 3 different areas. On Page, Off Page and On Site. Here is a brief list. I will expand on each of these in my up coming posts.
+On Page Factors&lt;/p&gt;
+
+&lt;h3&gt;These are elements on your web page that will affect you organic search position:&lt;/h3&gt;
+
+&lt;dl&gt;
+    &lt;dt&gt;Title Tag&lt;/dt&gt;
+    &lt;dd&gt;The most important element of on page to spiders. Put your most important keywords in the title tag. Put your most important one first.&lt;/dd&gt;
+    &lt;dt&gt;Meta Tags&lt;/dt&gt;
+    &lt;dd&gt;Not much weight, if any, is given to these anymore, but they are important for showing the description that you want shown in your search engine results. Keyword and Description meta tags are the main ones to focus on.&lt;/dd&gt;
+    &lt;dt&gt;Heading tags&lt;/dt&gt;
+    &lt;dd&gt;This is second to the title tag as the most important element on the page. H1 being the most important and H6 being the least. You want to stick with one H1 tag with your most important key terms in them. You can have multiple H2 -H6’s but you want to keep this to a minimum because it can be viewed as spamming and will dilute your page weight.&lt;/dd&gt;
+    &lt;dt&gt;Inter Linking&lt;/dt&gt;
+    &lt;dd&gt;See On Site Factors&lt;/dd&gt;
+    &lt;dt&gt;Link Density&lt;/dt&gt;
+    &lt;dd&gt;You want to keep the links on your pages to a maximum 100. Anything after 100 links that a bot sees on your site will be ignored&lt;/dd&gt;
+    &lt;dt&gt;Formatting tags&lt;/dt&gt;
+    &lt;dd&gt;Formatting tags like the `strong`, `em`, and heading tags will make the content that is in them look more important to spiders.&lt;/dd&gt;
+    &lt;dt&gt;Keyword Density&lt;/dt&gt;
+    &lt;dd&gt;The more of a keyword phrase you have on your page the better it will rank for that term. You don&amp;#8217;t want to overdo it because that will end up looking like spam. You want to keep it spread out throughout the page and slightly vary it in places.&lt;/dd&gt;
+    &lt;dt&gt;Keyword Position&lt;/dt&gt;
+    &lt;dd&gt;The content that is higher on the page will be looked at as more important than content that is lower on the page.&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;h3&gt;On Site Factors&lt;/h3&gt;
+
+&lt;p&gt;These are elements that are in your site but not necessarily on any page:&lt;/p&gt;
+
+&lt;dl&gt;
+    &lt;dt&gt;Robots.txt&lt;/dt&gt;
+    &lt;dd&gt;text file that is in the root of your site that tells bots where they can and cant go on the site.&lt;/dd&gt;
+    &lt;dt&gt;Site Map &lt;/dt&gt;
+    &lt;dd&gt;Usually and XML file that has all of the files in your site listed. Tells search engines about your content and makes it easier for them to index your content. You usually have to upload this via a Web Master interface for each search engine.&lt;/dd&gt;
+    &lt;dt&gt;Inter Linking&lt;/dt&gt;
+    &lt;dd&gt;You want to link your pages together so that when one page get crawled the spider can more easily have access to the rest of the pages on your site instead of hitting a dead end. &lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;p&gt;Keep important information at least 4 clicks deep, no more. Closer to the root the better.
+Keep shorter URLs for friendlier crawling&lt;/p&gt;
+
+&lt;h3&gt;Off Page Factors&lt;/h3&gt;
+
+&lt;dl&gt;
+    &lt;dt&gt;Links to your site&lt;/dt&gt;
+    &lt;dd&gt;This is the most important off page factor. Search engines factor how important you site is based on how many people are linking to you. The more the better. The anchor text of these incoming links will also affect your site. The anchor text will add to how your site is seen by Google.
+    EX: Some one links to pixelrex.com with the anchor text of “Cool Design Site” . Google will then increase the positioning of pixelrex.com for the search term “Cool Design Site”&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;h3&gt;Put on the Northface and have adventurez!&lt;/h3&gt;
+
+&lt;p&gt;&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/adventures.jpg&quot; width=&quot;300&quot;&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Day 1 of the 30 Day Challenge</title>
+    <link href="http://TagSoup.github.com/blog/2012/02/24/day-1-of-the-30-day-challenge/"/>
+    <updated>2012-02-24T20:24:00-07:00</updated>
+    <id>http://TagSoup.github.com/blog/2012/02/24/day-1-of-the-30-day-challenge</id>
+    <content type="html">&lt;p&gt;The idea is to have 30 days (in a row) of blog posts. The authors may vary. Subjects might not be serious; they don&amp;#8217;t need to be. The goal is to get out of our comfort zone and put something out there in hopes of helping / inspiring someone else. Most important, to have fun.&lt;/p&gt;
+
+&lt;p&gt;We need more people to join and post. You can see we have lots of space available. Here&amp;#8217;s &lt;a href=&quot;https://www.google.com/calendar/b/0/embed?src=6tbdk1sbit95epi2bb8c8jqqv4@group.calendar.google.com&amp;amp;ctz=America/Phoenix&quot;&gt;our calendar&lt;/a&gt; showing who&amp;#8217;s posting and when. If you&amp;#8217;re interested shoot a msg to &lt;a href=&quot;https://twitter.com/#!/phxtagsoup&quot;&gt;@phxtagsoup&lt;/a&gt; on twitter.&lt;/p&gt;
+
+&lt;p&gt;Now that the boring stuff is out of the way, here&amp;#8217;s a tiny &amp;#8220;ahhhhhh&amp;#8221; tip I can share. It&amp;#8217;s super basic, but I hear people ask this question all the time.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://TagSoup.github.com/images/undef-jams.png&quot; target=&quot;_new&quot;&gt;&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/undef-jams.png&quot; width=&quot;800&quot; title=&quot;Undef&quot; alt=&quot;Jams&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So I have a basic function inside of Chrome&amp;#8217;s console. When I press enter, I get the &amp;#8220;undefined&amp;#8221; msg. I haven&amp;#8217;t done anything though, so why the &amp;#8220;undefined&amp;#8221;? Javascript functions ALWAYS return a value. If you don&amp;#8217;t specify what it is, then it returns &amp;#8220;undefined&amp;#8221;. YAY!&lt;/p&gt;
+
+&lt;p&gt;If you would like a more elegant explanation, check out the ever useful, &lt;a href=&quot;http://stackoverflow.com/questions/903120/should-i-always-give-a-return-value-to-my-function/903126#903126&quot;&gt;Stack Overflow&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Since we&amp;#8217;re on the topic of &lt;code&gt;return&lt;/code&gt; values&amp;#8230; let&amp;#8217;s go over another small trick. Again, it&amp;#8217;s nothing mind blowing or revolutionary. I&amp;#8217;m sure you&amp;#8217;ve seen this pattern before (assume hondaElement is a class on an &amp;#8220;a&amp;#8221; tag:&lt;/p&gt;
+
+&lt;figure class=&#8217;code&#8217;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre class=&quot;line-numbers&quot;&gt;&lt;span class=&#8217;line-number&#8217;&gt;1&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;2&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;3&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;4&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;&lt;code class=&#8221;&gt;&lt;span class=&#8217;line&#8217;&gt;$(&#8216;#coolElement&#8217;).delegate(&#8216;.hondaElement&#8217;, &#8216;click&#8217;, function(e) {
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;  // do something silly here
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;  e.preventDefault();
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;preventDefault&amp;#8230; well, read that out loud and I bet you can guess what it&amp;#8217;s doing.&lt;/p&gt;
+
+&lt;p&gt;And here&amp;#8217;s another common pattern that is used:&lt;/p&gt;
+
+&lt;figure class=&#8217;code&#8217;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre class=&quot;line-numbers&quot;&gt;&lt;span class=&#8217;line-number&#8217;&gt;1&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;2&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;3&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;4&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;&lt;code class=&#8221;&gt;&lt;span class=&#8217;line&#8217;&gt;$(&#8216;#coolElement&#8217;).delegate(&#8216;.hondaElement&#8217;, &#8216;click&#8217;, function() {
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;  // do something silly here
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;  return false;
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;So, both examples stop the default action of the &lt;code&gt;a&lt;/code&gt; firing when clicked. The second example takes things a bit further. It not only stops the default action from firing, it also stops event bubbling. It&amp;#8217;s the same as doing:&lt;/p&gt;
+
+&lt;figure class=&#8217;code&#8217;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre class=&quot;line-numbers&quot;&gt;&lt;span class=&#8217;line-number&#8217;&gt;1&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;2&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;3&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;4&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;5&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;&lt;code class=&#8221;&gt;&lt;span class=&#8217;line&#8217;&gt;$(&#8216;#coolElement&#8217;).delegate(&#8216;.hondaElement&#8217;, &#8216;click&#8217;, function(e) {
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;  // do something silly here
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;  e.preventDefault();
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;  e.stopPropagation();
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;Now, the caveat&amp;#8230; I believe this only applies to jQuery. Vanilla js still needs to have both &lt;code&gt;e.preventDefault()&lt;/code&gt; and &lt;code&gt;e.stopPropagation()&lt;/code&gt;. If anyone has some extra info on that, please, leave a comment and set the record straight.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Polling is for chumps - node.js with EventSource</title>
+    <link href="http://TagSoup.github.com/blog/2012/02/22/polling-is-for-chumps/"/>
+    <updated>2012-02-22T00:23:00-07:00</updated>
+    <id>http://TagSoup.github.com/blog/2012/02/22/polling-is-for-chumps</id>
+    <content type="html">&lt;p&gt;You know what sucks? Making hundreds of round trips to a server to see if there&amp;#8217;s any new data you can grab.&lt;/p&gt;
+
+&lt;p&gt;But modern browsers (well, Firefox and Chrome and Safari) support a much neater option. With the right &lt;code&gt;Content-Type&lt;/code&gt; header, some special sauce in the client, and a modern browser platform, you can use the HTML5 &lt;a href=&quot;http://dev.w3.org/html5/eventsource/&quot;&gt;EventSource API&lt;/a&gt; to establish a single long-term connection for each client, and the server pushes new data whenever necessary.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;#8217;s start with a look at the server-side implementation.&lt;/p&gt;
+
+&lt;div&gt;&lt;script src=&#8217;https://gist.github.com/1883462.js?file=app-server.js&#8217;&gt;&lt;/script&gt;
+&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;var express = require(&#8216;express&#8217;);
+var fs = require(&#8216;fs&#8217;);
+
+// change this to some other log file that doesn&#8217;t require root permissions to read :)
+var logfile = &#8216;/var/log/messages&#8217;;
+
+var app = module.exports = express.createServer();
+
+app.configure(function(){
+  app.use(express.bodyParser());
+  app.use(express.methodOverride());
+  app.use(express.static(__dirname + &#8216;/public&#8217;));
+});
+
+app.configure(&#8216;development&#8217;, function(){
+  app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));␣
+});
+
+app.configure(&#8216;production&#8217;, function(){
+  app.use(express.errorHandler());␣
+});
+
+app.get(&#8216;/&#8217;, function(req, res) { res.redirect(&#8216;/index.html&#8217;) });
+
+app.error(function(err, req, res, next) {
+    console.log(&#8216;error: &#8217; + err );
+});
+
+app.get(&#8216;/events&#8217;, function(req, res) {
+    var id = (new Date()).toLocaleTimeString();
+    res.header(&#8216;Content-Type&#8217;, &#8216;text/event-stream&#8217;);
+    res.header(&#8216;Cache-Control&#8217;, &#8216;no-cache&#8217;);
+    res.header(&#8216;Connection&#8217;, &#8216;keep-alive&#8217;);
+
+    fs.open(logfile, &#8216;r&#8217;, function(err, fd) {
+        // Whenever new data is available to read, send it to the client
+        fs.watchFile(logfile, function(curr, prev) {
+            if (curr.size &amp;gt; prev.size) {
+                var size = curr.size - prev.size;
+                var data = new Buffer(size);
+                fs.read(fd, data, 0, size, prev.size, function(err, bytesRead, buffer) {
+                    res.write(&#8216;id: &#8217; + id + &#8216;\n&#8217;);
+                    res.write(&#8216;event: data\n&#8217;);
+                    res.write(&#8216;data: &#8217; + data.toString(&#8216;utf8&#8217;) + &#8216;\n\n&#8217;);
+                });
+            }
+        });
+
+        // If the client disconnects, let&#8217;s not leak any resources
+        res.on(&#8216;close&#8217;, function() {
+            fs.unwatchFile(logfile);
+            fs.close(fd);
+        });
+    });
+});
+
+app.listen(process.env.PORT || 3000);
+console.log(&amp;quot;tailpipe listening on port %d in %s mode&amp;quot;, app.address().port, app.settings.env);&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Things to note: The secret sauce here is all in the &lt;code&gt;/events&lt;/code&gt; handler. It&amp;#8217;s pretty simple - we watch a log file to see when its size changes, and when that happens, we read the new data from the end of the file and send it to the client tagged with the event name &lt;code&gt;data&lt;/code&gt; (so if you have multiple kinds of events, you can interleave different messages by tagging them with different &lt;code&gt;event&lt;/code&gt; names and the client will be able to properly distinguish them). And of course, if the client closes the connection, we want to free up the open file descriptor and the watch on the logfile.&lt;/p&gt;
+
+&lt;p&gt;Now, how do we consume this data from the client?&lt;/p&gt;
+
+&lt;div&gt;&lt;script src=&#8217;https://gist.github.com/1883462.js?file=app-client.js&#8217;&gt;&lt;/script&gt;
+&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;$.ready(function() {
+  var source = new EventSource(&amp;quot;/events&amp;quot;);
+  source.addEventListener(&#8216;data&#8217;, function(e) {
+    $(&amp;quot;#content&amp;quot;).append(e.data + &amp;quot;\n&amp;quot;);
+  }, false);
+});&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/div&gt;
+
+
+&lt;p&gt;It&amp;#8217;s so simple it almost doesn&amp;#8217;t need an explanation. The important things to note are: of course the URL has to point at the same endpoint that the server is exporting the stream on, and we add a listener for the &lt;code&gt;data&lt;/code&gt; event which we know the messages from the server will be tagged with. If you want to support multiple message types, you just add another listener on the client for each different &lt;code&gt;event&lt;/code&gt; name and you&amp;#8217;re good to go.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Kitty Corners</title>
+    <link href="http://TagSoup.github.com/blog/2012/01/26/kitty-corners/"/>
+    <updated>2012-01-26T18:23:00-07:00</updated>
+    <id>http://TagSoup.github.com/blog/2012/01/26/kitty-corners</id>
+    <content type="html">&lt;div id=&quot;centerer&quot;&gt;
+    &lt;div class=&quot;corners&quot;&gt;
+        &lt;div class=&quot;shadow&quot;&gt;
+            &lt;img src=&quot;http://www.placekitten.com/256/300&quot; alt=&quot;meow&quot; /&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Here is the end result of this experiment &lt;a href=&quot;http://jsfiddle.net/tonyjcamp/rATuB/18/&quot; target=&quot;_new&quot;&gt;Kitty Corners&lt;/a&gt;. Continue on to read my blabber.&lt;/p&gt;
+
+&lt;p&gt;As developers, we&amp;#8217;re constantly trying to &amp;#8220;level-up&amp;#8221;. Becoming a better developer is all about writing code. A goofy, but fun exercise I do from time to time involves browsing &lt;a href=&quot;http://www.dribbble.com&quot; target=&quot;_new&quot;/&gt;dribbble&lt;/a&gt;. I browse some of the great pieces of art on there and try to emulate it with CSS. I came across a piece by &lt;a href=&quot;http://dribbble.com/larrychen&quot; target=&quot;_new&quot;&gt;Larry Chen&lt;/a&gt; called &lt;a href=&quot;http://dribbble.com/shots/118282-Photo-Border-Style&quot; target=&quot;_new&quot;&gt;Photo Border Style&lt;/a&gt;. I figured I could whip up that border treatment pretty easily.&lt;/p&gt;
+
+&lt;p&gt;I knew &lt;a href=&quot;http://css-tricks.com/pseudo-element-roundup/&quot; target=&quot;_new&quot;&gt;CSS pseudo elements&lt;/a&gt; would be necessary. I had seen a couple of blog posts showing how to manipulate css borders to make triangles &lt;a href=&quot;http://www.russellheimlich.com/blog/pure-css-shapes-triangles-delicious-logo-and-hearts/&quot; target=&quot;_new&quot;&gt;(like this one)&lt;/a&gt;. I figured I would just toss a :before and :after pseudo element on the image and get a nice start on my border treatment.&lt;/p&gt;
+
+&lt;h3&gt;&lt;a href=&quot;http://jsfiddle.net/tonyjcamp/rATuB/&quot; target=&quot;_new&quot;&gt;Snag #1&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Now, I messed with that pseudo element for a while and nothing was working. I thought I was going crazy. I wasn&amp;#8217;t, &lt;a href=&quot;http://stackoverflow.com/questions/6949148/css-after-not-adding-content-to-certain-elements/6949190#6949190&quot; target=&quot;_blank&quot;&gt;pseudo elements can&amp;#8217;t be used on image tags&lt;/a&gt;?!? Why? :before and :after only work with non-replaced elements. A replaced element is any element whose appearance and dimensions are defined by an external resource. So, yup, an img falls under this category. So my first idea is a no go&amp;#8230; moving on.&lt;/p&gt;
+
+&lt;p&gt;Once I found out I couldn&amp;#8217;t use the pseudo elements on the img tags, I plopped in some span tags and added my pseudo elements. I had a white triangle overlapping the top left and bottom right corners. I was getting somewhere.&lt;/p&gt;
+
+&lt;h3&gt;&lt;a href=&quot;http://jsfiddle.net/tonyjcamp/5J2LZ/1/&quot; target=&quot;_new&quot;&gt;Level +1&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;The next task is getting the hairline drop shadows on the corner treatments. After thinking a bit, I had an easy solution. I would just add another triangle underneath it. This would be a tad bigger and blacker, but with some opacity. It turned out, the idea worked nicely.&lt;/p&gt;
+
+&lt;h3&gt;&lt;a href=&quot;http://jsfiddle.net/tonyjcamp/rATuB/2/&quot; target=&quot;_new&quot;&gt;Level +1&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;As you can see, the CSS is pretty messy. Lots of repetition, no inheritance, it was mostly just idea barf. Which is ok, but not final. More importantly, the damn thing doesn&amp;#8217;t scale&amp;#8230;&lt;/p&gt;
+
+&lt;h3&gt;&lt;a href=&quot;http://jsfiddle.net/tonyjcamp/x9knt/&quot; target=&quot;_new&quot;&gt;Snag #2 - Y U NO SCALE BRO?&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Adding the image to scale and keep the border treatment wasn&amp;#8217;t too bad, just change the display property on the container div&lt;/p&gt;
+
+&lt;figure class=&#8217;code&#8217;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre class=&quot;line-numbers&quot;&gt;&lt;span class=&#8217;line-number&#8217;&gt;1&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;&lt;code class=&#8221;&gt;&lt;span class=&#8217;line&#8217;&gt;display: inline-block;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;Now comes the markup and the CSS clean up. Here&amp;#8217;s where I ended up.&lt;/p&gt;
+
+&lt;h3&gt;&lt;a href=&quot;http://jsfiddle.net/tonyjcamp/rATuB/18/&quot; target=&quot;_new&quot;&gt;Level +1 - FINISH&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;I changed a few elements around. I added a div to center the image in the fiddle (totally not needed). Had one div with the psuedo elements for the top left and bottom right corner treatment, as well as a &amp;#8220;shadow&amp;#8221; element for each. In the end, 2 divs, and an img tag did the trick.&lt;/p&gt;
+
+&lt;div class=&quot;clearfix&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://2.bp.blogspot.com/-HmFBQC3udcU/Tc9tNlBmfyI/AAAAAAAABZQ/e5F6o4XmEMQ/s400/jambi.jpg&quot; width=&quot;60&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://2.bp.blogspot.com/-HmFBQC3udcU/Tc9tNlBmfyI/AAAAAAAABZQ/e5F6o4XmEMQ/s400/jambi.jpg&quot; width=&quot;60&quot;&gt;    
+&lt;img class=&quot;left&quot; src=&quot;http://2.bp.blogspot.com/-HmFBQC3udcU/Tc9tNlBmfyI/AAAAAAAABZQ/e5F6o4XmEMQ/s400/jambi.jpg&quot; width=&quot;60&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://2.bp.blogspot.com/-HmFBQC3udcU/Tc9tNlBmfyI/AAAAAAAABZQ/e5F6o4XmEMQ/s400/jambi.jpg&quot; width=&quot;60&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://2.bp.blogspot.com/-HmFBQC3udcU/Tc9tNlBmfyI/AAAAAAAABZQ/e5F6o4XmEMQ/s400/jambi.jpg&quot; width=&quot;60&quot;&gt;
+&lt;/div&gt;
+
+
+&lt;!&#8211; / &#8211;&gt;
+
+
+
+</content>
+  </entry>
+  
+  <entry>
+    <title>Mobile First Dubstyle - Luke (Dub) W.</title>
+    <link href="http://TagSoup.github.com/blog/2012/01/24/mobile-first-dubstyle-luke-dub-w-dot/"/>
+    <updated>2012-01-24T08:34:00-07:00</updated>
+    <id>http://TagSoup.github.com/blog/2012/01/24/mobile-first-dubstyle-luke-dub-w-dot</id>
+    <content type="html">&lt;p&gt;This video is from our November 2011 meeting. Luke was nice enough to jump on a Skype call and spend an hour with us. This was one of the first meetings where I saw a very diverse crowd. Normally we&amp;#8217;re 90% developers. This time we had designers, project managers, account managers and developers hanging out talking about the &amp;#8220;Mobile First&amp;#8221; ideology &amp;#x2665; &amp;#x2665;. I have to give a hug(e) thanks to &lt;a href=&quot;http://www.lukew.com/&quot; target=&quot;_new&quot;&gt;Luke W.&lt;/a&gt; for taking the time to talk with us. Please, take the time to add @lukew to your twitter feed (he&amp;#8217;s very active there) and head to his site which is full of crazy good articles.&lt;/p&gt;
+
+&lt;p&gt;Despite a few technical difficulties, this turned out all sparkles!&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/WZ3nqj87NZ8&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+</content>
+  </entry>
+  
+  <entry>
+    <title>JS Conf Reminder</title>
+    <link href="http://TagSoup.github.com/blog/2012/01/18/js-conf-reminder/"/>
+    <updated>2012-01-18T10:03:00-07:00</updated>
+    <id>http://TagSoup.github.com/blog/2012/01/18/js-conf-reminder</id>
+    <content type="html">&lt;h2&gt;Reminder&lt;/h2&gt;
+
+&lt;p&gt;Arizona developers. Tickets for &lt;a href=&quot;http://2012.jsconf.us&quot; target=&quot;_new&quot;&gt;JS Conf 2012&lt;/a&gt; go on sale today, Jan. 18th 2012, at 1pm AZ Time. If you have any interest in going, tickets sell out very quickly. Load up that browser and get &lt;a href=&quot;http://jsconfus2012.eventbrite.com/&quot; target=&quot;_new&quot;&gt;ready to buy your ticket&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Call for help&lt;/h2&gt;
+
+&lt;p&gt;Some of the TagSoup members are setting up a shuttle service from the airport to the hotel on Sunday. We haven&amp;#8217;t set up the times we will be offering the service, so details will be planned out as soon as we have our drivers ready. We currently have about 5 drivers that have volunteered so far. We need more people. If you are interested, please let me know. There will be something special in it for you!&lt;/p&gt;
+
+&lt;div class=&quot;clearfix&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://a6.sphotos.ak.fbcdn.net/hphotos-ak-snc4/64654_1661315297731_1382668088_1668565_3582645_n.jpg&quot; width=&quot;180&quot;&gt;    
+&lt;/div&gt;
+
+
+&lt;!&#8211; / &#8211;&gt;
+
+</content>
+  </entry>
+  
+  <entry>
+    <title>MS Filters Make Me Hate Life - Memoirs of a FE-ender</title>
+    <link href="http://TagSoup.github.com/blog/2011/12/29/ms-filters-make-me-hate-life-memoirs-of-a-fe-ender/"/>
+    <updated>2011-12-29T14:29:00-07:00</updated>
+    <id>http://TagSoup.github.com/blog/2011/12/29/ms-filters-make-me-hate-life-memoirs-of-a-fe-ender</id>
+    <content type="html">&lt;h4&gt;Here&amp;#8217;s a screen shot of my issue. Notice the sub nav being cut off!&lt;/h4&gt;
+
+&lt;div class=&quot;clearfix&quot;&gt;
+&lt;a href=&quot;http://TagSoup.github.com/images/nav-barf.jpg&quot; target=&quot;_new&quot;&gt;&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/nav-barf.jpg&quot; width=&quot;300&quot; height=&quot;197&quot; title=&quot;Why does&quot; alt=&quot;IE Hate Developers?&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;a href=&quot;http://jsfiddle.net/tonyjcamp/eNr2M/&quot; target=&quot;_new&quot;/&gt;TL;DR - Gimmie Solution&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Don&amp;#8217;t you hate it when you find yourself debugging some weird CSS issue knowing full well you&amp;#8217;ve solved the same exact problem in the past? I catch myself doing this all the time. I&amp;#8217;m being a bit hard on myself. It&amp;#8217;s not like I run into the same bug, project after project, failing to learn the solution. It&amp;#8217;s more like&amp;#8230; &amp;#8220;Shit I remember this bug, it happened to me 9 months ago, I can&amp;#8217;t remember how I fixed it back then. KKKKAAAAHHHHNNNNNNNN&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;This just happened to me. Instead of repeating my same old pattern of &amp;#8220;solve and forget&amp;#8221; (devs love patterns), I decided to take some time to write about the bug and solution. Partly for you guys, but also for myself. Now I can always reference this blog post for the solution.&lt;/p&gt;
+
+&lt;p&gt;Spoiler alert, after creating the reduced use case, the issue wasn&amp;#8217;t what I originally thought it was.&lt;/p&gt;
+
+&lt;h3&gt;Situation:&lt;/h3&gt;
+
+&lt;p&gt;I have a simple horizontal navigation menu with drop down sub-menus. This menu also has a background gradient. Totally basic, &amp;#8220;every website has it&amp;#8221; kinda stuff.&lt;/p&gt;
+
+&lt;h3&gt;The Issue I was having:&lt;/h3&gt;
+
+&lt;p&gt;All was well in modern-browser-land, BUT, IE9 was DOM-barfing. For some reason, IE9 was giving me an effect similar to having &amp;#8220;overflow: hidden;&amp;#8221; on the containing nav element. Anything outside of this container (in my case, the sub-menus) were being cut off. So first thing I look for is the overflow, then the z-indexing, what the box is doing then, then, then, etc. until I start to cry QQ.&lt;/p&gt;
+
+&lt;h3&gt;Solving the issue:&lt;/h3&gt;
+
+&lt;p&gt;Chris Coyer has a great artice on &lt;a href=&quot;http://css-tricks.com/reduced-test-cases/&quot; target=&quot;_new&quot;&gt;creating a reduced test case&lt;/a&gt;. Remembering the gist of it, I opened up js-fiddle and started hacking away. I was pretty sure the filter: property was being the hooker in my code. I knew it was depricated these days, but whatevs. It ended up coming down to 3 CSS properties living on the same element. Those being:&lt;/p&gt;
+
+&lt;figure class=&#8217;code&#8217;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre class=&quot;line-numbers&quot;&gt;&lt;span class=&#8217;line-number&#8217;&gt;1&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;2&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;3&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;&lt;code class=&#8221;&gt;&lt;span class=&#8217;line&#8217;&gt;position: fixed;
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;z-index: 9999;
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=&#8217;#cccccc&#8217;, endColorstr=&#8217;#000000&#8217;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;The filter BS jumped out at me right away. So I removed filter, and the content outside of the container was showing properly. The style became:&lt;/p&gt;
+
+&lt;figure class=&#8217;code&#8217;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre class=&quot;line-numbers&quot;&gt;&lt;span class=&#8217;line-number&#8217;&gt;1&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;2&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;&lt;code class=&#8221;&gt;&lt;span class=&#8217;line&#8217;&gt;position: fixed;
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;z-index: 9999;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;For fun, I then pulled out the position: fixed. The style became:&lt;/p&gt;
+
+&lt;figure class=&#8217;code&#8217;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre class=&quot;line-numbers&quot;&gt;&lt;span class=&#8217;line-number&#8217;&gt;1&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;2&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;&lt;code class=&#8221;&gt;&lt;span class=&#8217;line&#8217;&gt;z-index: 9999;
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=&#8217;#cccccc&#8217;, endColorstr=&#8217;#000000&#8217;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;I had my gradient, and the z-indexing working! Nice! So I started blaming position: fixed and filter being together. I told all my friends about it and they were all &amp;#8220;bro, so cool, let&amp;#8217;s shoot red bull into our vains and snort some vodka&amp;#8221;. Just for funsies, I removed the z-index but kept the position and filter on the element.&lt;/p&gt;
+
+&lt;figure class=&#8217;code&#8217;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre class=&quot;line-numbers&quot;&gt;&lt;span class=&#8217;line-number&#8217;&gt;1&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;2&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;&lt;code class=&#8221;&gt;&lt;span class=&#8217;line&#8217;&gt;position: fixed;
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=&#8217;#cccccc&#8217;, endColorstr=&#8217;#000000&#8217;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;IT WORKED! No z-index, but WTF! I told all my BFF&amp;#8217;s about it and they cheered. More RB, vodka and badges to be had.&lt;/p&gt;
+
+&lt;p&gt;So wanting the best of all 3 worlds, the simpliest solution I came up with was to wrap the nav bar in container element (don&amp;#8217;t care which you use), and put position: rel and z-index on the container. I kept the position: fixed and filter on the nav. Everything worked great. WIN!&lt;/p&gt;
+
+&lt;figure class=&#8217;code&#8217;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre class=&quot;line-numbers&quot;&gt;&lt;span class=&#8217;line-number&#8217;&gt;1&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;2&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;3&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;4&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;5&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;6&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;7&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;8&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;9&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;10&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;11&lt;/span&gt;
+&lt;span class=&#8217;line-number&#8217;&gt;12&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;&lt;code class=&#8221;&gt;&lt;span class=&#8217;line&#8217;&gt;#brotainer {
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;    position: relative;
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;    z-index: 9999;
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;}
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;#ie-hates-us {
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=&#8217;#cccccc&#8217;, endColorstr=&#8217;#000000&#8217;);
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;    position: fixed; 
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;/* This seems to break everything if you use z-index here, so use it on a container
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;    z-index: 9999;
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;*/
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;Here&amp;#8217;s the final fiddle:
+&lt;a href=&quot;http://jsfiddle.net/tonyjcamp/eNr2M/&quot; target=&quot;_new&quot;&gt;My final answer&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;And dudes, I learned a ton by coming up with this silly use case and writing an even sillier blog post about it. If you ever find yourself solving and issue you want to remember later, write a post! Hell, just fork this blog and write a post. I&amp;#8217;ll add it.&lt;/p&gt;
+
+&lt;div class=&quot;clearfix&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://26.media.tumblr.com/tumblr_lvsjfjCEMw1qza249o1_400.jpg&quot; width=&quot;256&quot; height=&quot;381&quot; title=&quot;Smart Dudes&quot; alt=&quot;Say Smart Things&quot;&gt;
+&lt;/div&gt;
+
+</content>
+  </entry>
+  
+  <entry>
+    <title>Editor, Y U Do That - Sublime 2, Whitespace and Git conflicts</title>
+    <link href="http://TagSoup.github.com/blog/2011/12/08/Sublime-2/"/>
+    <updated>2011-12-08T23:58:00-07:00</updated>
+    <id>http://TagSoup.github.com/blog/2011/12/08/Sublime-2</id>
+    <content type="html">&lt;p&gt;I recently changed text editors. For any dev, this is a big deal. We&amp;#8217;re talking changing religions big. I had been using TextMate for about 4 years. I love TextMate. Then, I started hearing more and more about Sublime 2. So I decided to give it a whirl. And, after 10 days, I&amp;#8217;m hooked. Thanks Ryan Mathis!&lt;/p&gt;
+
+&lt;p&gt;I wanted to point out a small feature/issue I ran into today. Sublime 2 has a config that will trim white space at the end of lines. It&amp;#8217;s really useful and in most cases a great feature.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#8217;s where I ran into the snag. I made a couple of VERY minor changes to a file. Saved, then ran git add, git commit etc. Another developer takes a look at what I pushed and tells me there conflicts all over the file. I only changed 2 lines of code, how can there be conflicts &amp;#8220;all over the place&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#8217;s a quick example of the feature in action. On the left, I have Sublime 2 open. On the right, I have the same file open in TextMate. When I click save in Sublime 2, you will see the white space disappear.&lt;/p&gt;
+
+&lt;iframe width=&quot;960&quot; height=&quot;720&quot; src=&quot;http://www.youtube.com/embed/tVBVkewGpU0?hd=1&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+
+&lt;p&gt;This was causing the conflicts in git. It took me a while to figure this out. I knew it was the editor, but not sure where it was happening. Once I figured it out, I needed to turn it off for this specific project :(&lt;/p&gt;
+
+&lt;p&gt;I found this setting:&lt;/p&gt;
+
+&lt;figure class=&#8217;code&#8217;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre class=&quot;line-numbers&quot;&gt;&lt;span class=&#8217;line-number&#8217;&gt;1&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;&lt;code class=&#8221;&gt;&lt;span class=&#8217;line&#8217;&gt;&quot;trim_trailing_white_space_on_save&quot;: true,&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;in the Base.File.sublime-settings (Default) and Base.File.sublime-settings (User). You can access these files by going to Sublime Text 2 &gt; Preferences &gt; File Settings Default and File Settings - User. I changed the setting to &amp;#8216;false&amp;#8217; in both files and that did the trick.&lt;/p&gt;
+
+&lt;p&gt;Features like Trimming Trailing White Space are really nice. And 99% of the time should be turned on. But it&amp;#8217;s important to understand all the magic your editor is doing for you. Next time you hit that edge case and have to disable a feature, you won&amp;#8217;t have to waste time troubleshooting.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>More Notes From: OMG That’s So Kewl - Show and Tell</title>
+    <link href="http://TagSoup.github.com/blog/2011/12/03/more-notes-from-omg-thats-so-kewl-show-and-tell/"/>
+    <updated>2011-12-03T23:27:00-07:00</updated>
+    <id>http://TagSoup.github.com/blog/2011/12/03/more-notes-from-omg-thats-so-kewl-show-and-tell</id>
+    <content type="html">&lt;p&gt;Here is the video from our final, special guest, Paul Irish. Paul is an amazing developer. Some how, while releasing libraries like HTML5 BP and Modernizr, he is still able to find the time to talk to Phx Tag Soup. This screencast is about the Modernizr Test Suite. I will be blogging more about this specific meet-up and what it meat to me personally soon. For now, enjoy!&lt;/p&gt;
+
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/5bdVgy1dROk&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+
+&lt;p&gt;-Tony&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>HTML History API with Luke Karrys</title>
+    <link href="http://TagSoup.github.com/blog/2011/10/28/html5-history-api-with-luke-karrys/"/>
+    <updated>2011-10-28T02:17:00-07:00</updated>
+    <id>http://TagSoup.github.com/blog/2011/10/28/html5-history-api-with-luke-karrys</id>
+    <content type="html">&lt;p&gt;Hey everyone, &lt;a href=&quot;http://twitter.com&quot;&gt;Luke Karrys&lt;/a&gt; here, I&amp;#8217;m forking ur Octopress, adding my postz.&lt;/p&gt;
+
+&lt;p&gt;I gave a presentation at the meetup on &lt;a href=&quot;http://tagsoup.github.com/blog/2011/10/24/new-post/&quot;&gt;Thursday, October 27&lt;/a&gt; titled &lt;a href=&quot;http://lukecod.es/presentation-slides/html5-history-102711&quot;&gt;&amp;#8220;HTML History &amp;amp; You (and how to keep your hair when working with it)&amp;#8221;&lt;/a&gt;. If you couldn&amp;#8217;t make it (or if you just didn&amp;#8217;t get enough the first time), &lt;a href=&quot;http://lukecod.es/presentation-slides/html5-history-102711&quot;&gt;check out the slides&lt;/a&gt; (or &lt;a href=&quot;https://github.com/lukekarrys/presentation-slides&quot;&gt;fork &amp;#8216;em on GitHub&lt;/a&gt;). Hit me up on &lt;a href=&quot;http://twitter.com&quot;&gt;Twitter&lt;/a&gt; or &lt;a href=&quot;https://github.com/lukekarrys&quot;&gt;GitHub&lt;/a&gt; with questions, comments or critiques. I&amp;#8217;d be happy to hear it all.&lt;/p&gt;
+
+&lt;p&gt;And since Phoenix Tag Soup is all about doing cool stuff, enter the Konami Code. I dare you.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>OMG That is So Kewl - Show and Tell</title>
+    <link href="http://TagSoup.github.com/blog/2011/10/24/omg-thats-so-kewl/"/>
+    <updated>2011-10-24T23:03:00-07:00</updated>
+    <id>http://TagSoup.github.com/blog/2011/10/24/omg-thats-so-kewl</id>
+    <content type="html">&lt;p&gt;This Thursday, (October 27, 2011, 6:30 PM) we will be hosting the next Phx Tag Soup event. &lt;a href=&quot;http://maps.google.com/maps?q=425+S.+Mill+Ave+%23201,+Tempe,+AZ&amp;hnear=425+S+Mill+Ave,+Tempe,+Arizona+85281&amp;t=h&amp;z=16&amp;vpsrc=0&quot;&gt;Terralever&lt;/a&gt; has been nice enough to let us use their space again.&lt;/p&gt;
+
+&lt;p&gt;This month a couple of Phx locals will be giving short (10-15min) talks on projects they&amp;#8217;ve been developing. We also have some non-locals giving lightening web talks about their projects.&lt;/p&gt;
+
+&lt;div class=&quot;clearfix&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/speakers/luke.jpeg&quot; width=&quot;128&quot; height=&quot;128&quot; title=&quot;Manveloper&quot; alt=&quot;Luke Karrys, Mustached Manveloper&quot;&gt;
+The Mustached Manveloper, Luke Karrys (&lt;a href=&quot;http://twitter.com/#!/lukekarrys&quot;&gt;@lukekarrys&lt;/a&gt;), will talk about the pain points he ran into with his HTML5 history API capable site he recently worked. Plus, discussing how he can pack so many buzzwords into a single project.&lt;/div&gt;
+
+
+
+
+&lt;div class=&quot;clearfix&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/speakers/alan.jpeg&quot; width=&quot;128&quot; height=&quot;128&quot; title=&quot;Alan Hogan&quot; alt=&quot;Alan Hogan&quot;&gt;
+Alan Hogan (&lt;a href=&quot;http://twitter.com/#!/AlanHogan&quot;&gt;@AlanHogan&lt;/a&gt;) is going talk about when your plan might not go quite as planned&amp;#8230; see what I did there?
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&quot;clearfix&quot;&gt;
+Then, via the internets:
+&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/speakers/ray.jpeg&quot; width=&quot;128&quot; height=&quot;128&quot; title=&quot;Ray Morgan&quot; alt=&quot;Ray Morgan&quot;&gt;
+Our friends in Las Vegas have been busy writing an iOS app called &lt;a href=&quot;http://www.rumgr.com&quot;&gt;Rumgr&lt;/a&gt;. Started by Zappos developers Dylan Bathurst (&lt;a href=&quot;http://twitter.com/#!/dylanbathurst&quot;&gt;@dylanbathurst&lt;/a&gt;) and Ray C. Morgan (&lt;a href=&quot;http://twitter.com/#!/raycmorgan&quot;&gt;@raycmorgan&lt;/a&gt;), Rumgr has gone on to win some serious awards. Since it&amp;#8217;s launch Ray and Dylan have left Zappos to live the startup dream. And that&amp;#8217;s exactly what Ray will be talking about.
+&lt;/div&gt;
+
+
+&lt;p&gt;Finally, we have a very special guest. He will be discussing a library that most front-end developers have heard of, and most likely have used on current projects. He also happened to write that library, so this should be hawttt.&lt;/p&gt;
+
+&lt;p&gt;Right after the talks wind down, we&amp;#8217;re heading to Rula Bula to grab a drink and just hang out. So come out, show some support for the Phx Interwebs Community and have a good time.&lt;/p&gt;
+
+&lt;p&gt;If you made it this far, enjoy this &lt;a href=&quot;http://www.unicorn-pictures.com/images/unicorn3.jpg&quot;&gt;free desktop background&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Ryan Dahl&#8217;s History of Node.js</title>
+    <link href="http://TagSoup.github.com/blog/2011/10/05/ryan-dahls-history-of-node-dot-js/"/>
+    <updated>2011-10-05T21:04:00-07:00</updated>
+    <id>http://TagSoup.github.com/blog/2011/10/05/ryan-dahls-history-of-node-dot-js</id>
+    <content type="html">&lt;p&gt;Being a late on anything sucks right? But being late is always better than not finishing what you set out to do. So I just want to do a small recap of September&amp;#8217;s meet-up. Bottom line, Ryan fucking Dahl (&lt;a href=&quot;http://twitter.com/#!/ryah&quot;&gt;@ryah&lt;/a&gt;)!! Ryan was nice enough to take some time to talk to us about the history of &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt;. He&amp;#8217;s never really told this story until now. Thanks so much Ryan&lt;/p&gt;
+
+&lt;p&gt;Check out the video here:&lt;/p&gt;
+
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/SAc0vQCC6UQ&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+
+&lt;p&gt;Getting this video up on the web was hooker-ish. After the meet-up was over, I excitedly opened my laptop to watch the video. The computer was acting strange and eventually locked up before I could play the video. So half drunk, I reboot the laptop. I start up SilverBack App to check out the video and it looks great. BUT there is no audio. So after 3-4 days doing anything I could to save the file I gave up. I mean, FFMPEG even failed me :(  I wipe up my tears and I eventually had to send the file off the be &amp;#8220;professionally&amp;#8221; repaired. Oh well, that shit happens. I&amp;#8217;m just glad the video was saved.&lt;/p&gt;
+
+&lt;p&gt;No more talky, just go watch the video again, then hack on something.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Mmmm Soup</title>
+    <link href="http://TagSoup.github.com/blog/2011/10/02/mmmm-soup/"/>
+    <updated>2011-10-02T21:21:00-07:00</updated>
+    <id>http://TagSoup.github.com/blog/2011/10/02/mmmm-soup</id>
+    <content type="html">&lt;p&gt;Whoo Hoo! First post! So, we&amp;#8217;ve found a home. Maybe temporary, might be permanent. We still haven&amp;#8217;t decided. But let&amp;#8217;s get into it.&lt;/p&gt;
+
+&lt;p&gt;Who are we? The answer is simple. We&amp;#8217;re a group developers (client side, server side and even UX/UI side) in the Phoenix area. We all love the interactive space. We also want to make the web more fun.&lt;/p&gt;
+
+&lt;p&gt;Why Phx Tag Soup exists&amp;#8230; This one requires a bit of back story, so hang with me. Inspiration is a great side effect of being a developer. It doesn&amp;#8217;t matter which part of the web you&amp;#8217;re working on, there&amp;#8217;s so much great shit out there you can&amp;#8217;t help but be inspired. Most developers have favorite blogs, favorite people to follow on the various social media outlets etc&amp;#8230; While it stops there for a lot of developers, those that look further get rewarded. It&amp;#8217;s weird to think that &amp;#8220;looking further for inspiration&amp;#8221; means looking in non-digital outlets. GASP, real life! Conferences can be life changing. And the answer to &amp;#8220;why Tag Soup exists&amp;#8221; is a conference.&lt;/p&gt;
+
+&lt;p&gt;Three of us went to TXJS, a javascript conference put on by some #bada55 javascript developers. This is considered a &amp;#8220;small&amp;#8221; conference. Roughly 150 tickets are sold. Keeping the ticket sales low, the small crowd makes for BIG atmosphere. Everyone at TXJS was really nice. Like out of their way kind of nice. You could fell comfortable approaching anyone there. Including Douglas Crockford, Brenden Eich, Paul Irish, Yahuda Katz and so on. I remember walking past Papa Crock in the stair well of the theatre and telling him I liked his talk. He seemed genuinely happy to hear that and we went on to talk a bit more about JS in general. Later, I walked up to Brenden Eich and asked what he thought about Coffee Script. He told me his thoughts and I walked away thinking&amp;#8230; holy shit, that&amp;#8217;s the dude that wrote JS in 10 days. 10 days! I can&amp;#8217;t even write a decent blog post in 10 days. I can go on with stories like this, but let&amp;#8217;s get back to the point of this post.&lt;/p&gt;
+
+&lt;p&gt;So after the conference ended, and we fly back to Arizona, we had to do something to simulate the feeling we had in Austin. Ryan, Olu and I decided to form a small meet up group. Our goal was to get some friends together and talk about various technologies, best practices and learn from each other. Ritchie and Eric joined up and now there were 5 of us. We didn&amp;#8217;t care if no one besides us showed. We would still be doing what we loved: talking nerdy. Ryan Gasaparini (@rxgx) came up with the name. Tag Soup is a slang term for shitty code. We try not to take ourselves too seriously, so this name seemed to fit. Plus it has a nice ring to it.&lt;/p&gt;
+
+&lt;p&gt;We didn&amp;#8217;t know when we would officially meet, or where, or any details. We were going to wing it. We had no plan. Then, watching twitter, I saw Jonathan Snook post a tweet about being in my hometown. He had checked into a small Farmhouse Grill down the street. I replied, &amp;#8220;You&amp;#8217;re a mile away from me!&amp;#8221;. Next thing I know, @kitt who he was visiting with, asks me if I know of any local meet ups that are good. I tell her about Phx Tag Soup, and she wants to know when we&amp;#8217;re meeting so her and Snook can drop by. Um, wait, @snookca and @kitt want to come to our meet up group that&amp;#8217;s basically an idea we&amp;#8217;re trying to get off the ground. This was the catalyst that got our shit together, fast. In 4 days, we had a bad ass venue, some great sponsors that shipped out shirts, stickers and other fun swag (thanks Terralever, GitHub, Evil Controllers and Statera). We went from a group of 5 friends, to a group of 38 devs in 4 days. We were really excited.&lt;/p&gt;
+
+&lt;p&gt;Snook made the meeting great. He casually talked about what goes on at Yahoo. Answered our questions and was super cool about the whole thing (will post the video soon). This is right around the same time that his site turned 10, so we got a hawt rainbow cake and celebrated. Fun times. We can&amp;#8217;t thank @kitt and @snookca enough. After the meeting, everyone left, and the 5 of us finished up the beer. Looking back at it now, there&amp;#8217;s no doubt that we had succeeded in our original goal. We had brought the spirit of TXJS to Phoenix, AZ.&lt;/p&gt;
+</content>
+  </entry>
+  
+</feed>
