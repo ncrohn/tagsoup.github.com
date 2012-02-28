@@ -9,7 +9,7 @@
   <meta name="author" content="Phx Tag Soup">
 
   
-  <meta name="description" content="In the immortal words or Colonel Sanders, I&#8217;m too drunk to write this blog post. But eff it (note: I don&#8217;t know if Colonel Sanders said &hellip;">
+  <meta name="description" content="In the immortal words or of Colonel Sanders, I&#8217;m too drunk to write this blog post. But eff it (note: I don&#8217;t know if Colonel Sanders &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -87,7 +87,7 @@
   </header>
 
 
-<div class="entry-content"><p>In the immortal words or Colonel Sanders, I&#8217;m too drunk to write this blog post. But eff it (note: I don&#8217;t know if Colonel Sanders said that part). Don&#8217;t take this as a knock that I don&#8217;t care about this blog post because I do. The HTML5 history API is one of my favorite things ever (and Tony Camp is one of my personal heroes). If the HTML5 history API (or Tony Camp) came up to me and said, &#8220;Hey baby, I work to spec in all the latest browsers and degrade gracefully in the others. What are you doing later?&#8221; I would say, &#8220;Writing some code. See you later.&#8221; I love it so much, I gave a talk about it at a previous <a href="http://tagsoup.github.com/blog/2011/10/28/html5-history-api-with-luke-karrys/">Tag Soup meetup</a>. But here I am going to tell you how to convert your current Octopress blog into an Octopress blog that uses HTML5 pushState (and how to report bugs to me where I messed up, because I definitely did).</p>
+<div class="entry-content"><p>In the immortal words <del>or</del> <em>of</em> Colonel Sanders, I&#8217;m too drunk to write this blog post. But eff it (note: I don&#8217;t know if Colonel Sanders said that part). Don&#8217;t take this as a knock that I don&#8217;t care about this blog post because I do. The HTML5 history API is one of my favorite things ever (and Tony Camp is one of my personal heroes). If the HTML5 history API (or Tony Camp) came up to me and said, &#8220;Hey baby, I work to spec in all the latest browsers and degrade gracefully in the others. What are you doing later?&#8221; I would say, &#8220;Writing some code. See you later.&#8221; I love it so much, I gave a talk about it at a previous <a href="http://tagsoup.github.com/blog/2011/10/28/html5-history-api-with-luke-karrys/">Tag Soup meetup</a>. But here I am going to tell you how to convert your current Octopress blog into an Octopress blog that uses HTML5 pushState (and how to report bugs to me where I messed up, because I definitely did).</p>
 
 <!--more-->
 
@@ -152,7 +152,7 @@
 
 <p>Next, we want to to use another method I yanked from Benjamin. This is enables us to run the <code>ajaxify()</code> function against jQuery objects. The only trick here, is the bug I talked about earlier. We have to separate the hash from the clicked url and pass it to the pushState event listener through the first parameter, which is a data object that can contain any arbitrary data.</p>
 
-<p>Another note worth mentioning is the second parameter of the pushState method. That accepts a title for the new page, but as far as I know, no browsers support it. Also when using the <code>ajaxify</code> function in this way, we don&#8217;t know the full title of the next page at this junction. This could be rearranged, but since the browsers don&#8217;t support it, I don&#8217;t see much reason for doing so know (especially since we will update the title manually later).</p>
+<p>Another note worth mentioning is the second parameter of the pushState method. That accepts a title for the new page, but as far as I know, no browsers support it. Also when using the <code>ajaxify</code> function in this way, we don&#8217;t know the full title of the next page at this junction. This could be rearranged, but since the browsers don&#8217;t support it, I don&#8217;t see much reason for doing so <del>know</del> <em>now</em> (especially since we will update the title manually later).</p>
 
 <figure class='code'><figcaption><span>ajaxify.js </span></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>

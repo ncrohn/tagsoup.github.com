@@ -4,7 +4,7 @@
   <title>Phx Tag Soup</title>
   <link href="http://TagSoup.github.com/atom.xml" rel="self"/>
   <link href="http://TagSoup.github.com/"/>
-  <updated>2012-02-28T10:26:21-07:00</updated>
+  <updated>2012-02-28T10:30:54-07:00</updated>
   <id>http://TagSoup.github.com/</id>
   <author>
     <name>Phx Tag Soup</name>
@@ -17,7 +17,7 @@
     <link href="http://TagSoup.github.com/blog/2012/02/27/day-4-drunk-and-pushing-state/"/>
     <updated>2012-02-27T21:58:00-07:00</updated>
     <id>http://TagSoup.github.com/blog/2012/02/27/day-4-drunk-and-pushing-state</id>
-    <content type="html">&lt;p&gt;In the immortal words or Colonel Sanders, I&amp;#8217;m too drunk to write this blog post. But eff it (note: I don&amp;#8217;t know if Colonel Sanders said that part). Don&amp;#8217;t take this as a knock that I don&amp;#8217;t care about this blog post because I do. The HTML5 history API is one of my favorite things ever (and Tony Camp is one of my personal heroes). If the HTML5 history API (or Tony Camp) came up to me and said, &amp;#8220;Hey baby, I work to spec in all the latest browsers and degrade gracefully in the others. What are you doing later?&amp;#8221; I would say, &amp;#8220;Writing some code. See you later.&amp;#8221; I love it so much, I gave a talk about it at a previous &lt;a href=&quot;http://tagsoup.github.com/blog/2011/10/28/html5-history-api-with-luke-karrys/&quot;&gt;Tag Soup meetup&lt;/a&gt;. But here I am going to tell you how to convert your current Octopress blog into an Octopress blog that uses HTML5 pushState (and how to report bugs to me where I messed up, because I definitely did).&lt;/p&gt;
+    <content type="html">&lt;p&gt;In the immortal words &lt;del&gt;or&lt;/del&gt; &lt;em&gt;of&lt;/em&gt; Colonel Sanders, I&amp;#8217;m too drunk to write this blog post. But eff it (note: I don&amp;#8217;t know if Colonel Sanders said that part). Don&amp;#8217;t take this as a knock that I don&amp;#8217;t care about this blog post because I do. The HTML5 history API is one of my favorite things ever (and Tony Camp is one of my personal heroes). If the HTML5 history API (or Tony Camp) came up to me and said, &amp;#8220;Hey baby, I work to spec in all the latest browsers and degrade gracefully in the others. What are you doing later?&amp;#8221; I would say, &amp;#8220;Writing some code. See you later.&amp;#8221; I love it so much, I gave a talk about it at a previous &lt;a href=&quot;http://tagsoup.github.com/blog/2011/10/28/html5-history-api-with-luke-karrys/&quot;&gt;Tag Soup meetup&lt;/a&gt;. But here I am going to tell you how to convert your current Octopress blog into an Octopress blog that uses HTML5 pushState (and how to report bugs to me where I messed up, because I definitely did).&lt;/p&gt;
 
 &lt;!&#8211;more&#8211;&gt;
 
@@ -82,7 +82,7 @@
 
 &lt;p&gt;Next, we want to to use another method I yanked from Benjamin. This is enables us to run the &lt;code&gt;ajaxify()&lt;/code&gt; function against jQuery objects. The only trick here, is the bug I talked about earlier. We have to separate the hash from the clicked url and pass it to the pushState event listener through the first parameter, which is a data object that can contain any arbitrary data.&lt;/p&gt;
 
-&lt;p&gt;Another note worth mentioning is the second parameter of the pushState method. That accepts a title for the new page, but as far as I know, no browsers support it. Also when using the &lt;code&gt;ajaxify&lt;/code&gt; function in this way, we don&amp;#8217;t know the full title of the next page at this junction. This could be rearranged, but since the browsers don&amp;#8217;t support it, I don&amp;#8217;t see much reason for doing so know (especially since we will update the title manually later).&lt;/p&gt;
+&lt;p&gt;Another note worth mentioning is the second parameter of the pushState method. That accepts a title for the new page, but as far as I know, no browsers support it. Also when using the &lt;code&gt;ajaxify&lt;/code&gt; function in this way, we don&amp;#8217;t know the full title of the next page at this junction. This could be rearranged, but since the browsers don&amp;#8217;t support it, I don&amp;#8217;t see much reason for doing so &lt;del&gt;know&lt;/del&gt; &lt;em&gt;now&lt;/em&gt; (especially since we will update the title manually later).&lt;/p&gt;
 
 &lt;figure class=&#8217;code&#8217;&gt;&lt;figcaption&gt;&lt;span&gt;ajaxify.js &lt;/span&gt;&lt;/figcaption&gt;
  &lt;div class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre class=&quot;line-numbers&quot;&gt;&lt;span class=&#8217;line-number&#8217;&gt;1&lt;/span&gt;
