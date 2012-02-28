@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title>Phx Tag Soup</title>
-  <link href="http://TagSoup.github.com/atom.xml" rel="self"/>
-  <link href="http://TagSoup.github.com/"/>
-  <updated>2012-02-28T10:35:40-07:00</updated>
-  <id>http://TagSoup.github.com/</id>
+  <link href="http://tagsoup.github.com/atom.xml" rel="self"/>
+  <link href="http://tagsoup.github.com/"/>
+  <updated>2012-02-28T10:39:37-07:00</updated>
+  <id>http://tagsoup.github.com/</id>
   <author>
     <name>Phx Tag Soup</name>
     
@@ -14,9 +14,9 @@
   
   <entry>
     <title>Day 4: Drunk and Pushing State</title>
-    <link href="http://TagSoup.github.com/blog/2012/02/27/day-4-drunk-and-pushing-state/"/>
+    <link href="http://tagsoup.github.com/blog/2012/02/27/day-4-drunk-and-pushing-state/"/>
     <updated>2012-02-27T21:58:00-07:00</updated>
-    <id>http://TagSoup.github.com/blog/2012/02/27/day-4-drunk-and-pushing-state</id>
+    <id>http://tagsoup.github.com/blog/2012/02/27/day-4-drunk-and-pushing-state</id>
     <content type="html">&lt;p&gt;In the immortal words &lt;del&gt;or&lt;/del&gt; &lt;em&gt;of&lt;/em&gt; Colonel Sanders, I&amp;#8217;m too drunk to write this blog post. But eff it (note: I don&amp;#8217;t know if Colonel Sanders said that part). Don&amp;#8217;t take this as a knock that I don&amp;#8217;t care about this blog post because I do. The HTML5 history API is one of my favorite things ever (and Tony Camp is one of my personal heroes). If the HTML5 history API (or Tony Camp) came up to me and said, &amp;#8220;Hey baby, I work to spec in all the latest browsers and degrade gracefully in the others. What are you doing later?&amp;#8221; I would say, &amp;#8220;Writing some code. See you later.&amp;#8221; I love it so much, I gave a talk about it at a previous &lt;a href=&quot;http://tagsoup.github.com/blog/2011/10/28/html5-history-api-with-luke-karrys/&quot;&gt;Tag Soup meetup&lt;/a&gt;. But here I am going to tell you how to convert your current Octopress blog into an Octopress blog that uses HTML5 pushState (and how to report bugs to me where I messed up, because I definitely did).&lt;/p&gt;
 
 &lt;!&#8211;more&#8211;&gt;
@@ -381,8 +381,8 @@
 &lt;span class=&#8217;line-number&#8217;&gt;17&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;&lt;code class=&#8217;html&#8217;&gt;&lt;span class=&#8217;line&#8217;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;      &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;disqus_shortname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;phxtagsoup&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;      &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;disqus_identifier&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;http://TagSoup.github.com/blog/2012/02/27/day-4-drunk-and-pushing-state/&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;      &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;disqus_url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;http://TagSoup.github.com/blog/2012/02/27/day-4-drunk-and-pushing-state/&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;      &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;disqus_identifier&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;http://tagsoup.github.com/blog/2012/02/27/day-4-drunk-and-pushing-state/&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;      &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;disqus_url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;http://tagsoup.github.com/blog/2012/02/27/day-4-drunk-and-pushing-state/&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;
 &lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;
 &lt;/span&gt;&lt;span class=&#8217;line&#8217;&gt;        &lt;span class=&quot;c1&quot;&gt;// var disqus_developer = 1;       &lt;/span&gt;
@@ -713,15 +713,15 @@
   
   <entry>
     <title>I&#8217;ll Show You Mine if You Show Me Yours</title>
-    <link href="http://TagSoup.github.com/blog/2012/02/26/ill-show-you-mine-if-you-show-me-yours/"/>
+    <link href="http://tagsoup.github.com/blog/2012/02/26/ill-show-you-mine-if-you-show-me-yours/"/>
     <updated>2012-02-26T22:06:00-07:00</updated>
-    <id>http://TagSoup.github.com/blog/2012/02/26/ill-show-you-mine-if-you-show-me-yours</id>
+    <id>http://tagsoup.github.com/blog/2012/02/26/ill-show-you-mine-if-you-show-me-yours</id>
     <content type="html">&lt;h3&gt;Day 3 of the 30 Day Challenge&lt;/h3&gt;
 
 &lt;p&gt;Working in the default themed Terminal all day will make any sane (no such thing) developer cry. I&amp;#8217;m sure we each have our own favorite customizations. Me? I&amp;#8217;m a zsh sort of guy. Using it for a while (thanks &lt;a href=&quot;https://twitter.com/#!/slashclee&quot;&gt;@slashclee&lt;/a&gt;) I find myself switching up the themes each time I configure or reconfigure a computer. First thing&amp;#8217;s first though, I&amp;#8217;m using a mac. I&amp;#8217;m not a &amp;#8220;fan boy&amp;#8221;, I&amp;#8217;m just comfortable with it at this point. So if you&amp;#8217;re wanting to get this going on your Linux system, there are links that can help you&amp;#8230; I&amp;#8217;m sorry, but I can&amp;#8217;t help.&lt;/p&gt;
 
 &lt;p&gt;Enough words, how about some hawt pics?
-&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/zsh.png&quot; width=&quot;800&quot;&gt;&lt;/p&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://tagsoup.github.com/images/zsh.png&quot; width=&quot;800&quot;&gt;&lt;/p&gt;
 
 &lt;!&#8211;more&#8211;&gt;
 
@@ -750,7 +750,7 @@
 
 &lt;p&gt;I&amp;#8217;m using &lt;a href=&quot;https://github.com/tomislav/osx-lion-terminal.app-colors-solarized&quot;&gt;Tomislav Filipčić&amp;#8217;s Solarized theme&lt;/a&gt; for my Terminal. Grab that, unzip it and run the Solarized Dark.terminal file. This will create a new theme based on the ever popular &lt;a href=&quot;http://ethanschoonover.com/solarized&quot;&gt;Solarized by Ethan Schoonover&lt;/a&gt;. Select Solarized Dark under Terminal &gt; Preferences &gt; Settings.&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;center&quot; src=&quot;http://TagSoup.github.com/images/solarized.dark.png&quot; width=&quot;500&quot; title=&quot;&#8217;term bo&#8217;&quot; &gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;center&quot; src=&quot;http://tagsoup.github.com/images/solarized.dark.png&quot; width=&quot;500&quot; title=&quot;&#8217;term bo&#8217;&quot; &gt;&lt;/p&gt;
 
 &lt;h3&gt;Customizing Oh-My-Zsh&lt;/h3&gt;
 
@@ -862,12 +862,12 @@ export RPROMPT=$&#8217;%{\e[1;31m%}$(project_pwd)%{\e[0;34m%}$(ruby_version)$(gi
 &lt;a href=&quot;https://twitter.com/#!/ohmyzsh&quot;&gt;Oh My ZSH Twitter&lt;/a&gt; - Blue birds&lt;br /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;clearfix&quot;&gt;
-&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/whip-it.jpg&quot; width=&quot;60&quot;&gt;
-&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/whip-it.jpg&quot; width=&quot;60&quot;&gt;
-&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/whip-it.jpg&quot; width=&quot;60&quot;&gt;
-&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/whip-it.jpg&quot; width=&quot;60&quot;&gt;
-&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/whip-it.jpg&quot; width=&quot;60&quot;&gt;
-&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/whip-it.jpg&quot; width=&quot;60&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://tagsoup.github.com/images/whip-it.jpg&quot; width=&quot;60&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://tagsoup.github.com/images/whip-it.jpg&quot; width=&quot;60&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://tagsoup.github.com/images/whip-it.jpg&quot; width=&quot;60&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://tagsoup.github.com/images/whip-it.jpg&quot; width=&quot;60&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://tagsoup.github.com/images/whip-it.jpg&quot; width=&quot;60&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://tagsoup.github.com/images/whip-it.jpg&quot; width=&quot;60&quot;&gt;
 &lt;/div&gt;
 
 
@@ -877,9 +877,9 @@ export RPROMPT=$&#8217;%{\e[1;31m%}$(project_pwd)%{\e[0;34m%}$(ruby_version)$(gi
   
   <entry>
     <title>Optimize My Stuff and Junk</title>
-    <link href="http://TagSoup.github.com/blog/2012/02/25/optimize-my-stuff-and-junk/"/>
+    <link href="http://tagsoup.github.com/blog/2012/02/25/optimize-my-stuff-and-junk/"/>
     <updated>2012-02-25T20:28:00-07:00</updated>
-    <id>http://TagSoup.github.com/blog/2012/02/25/optimize-my-stuff-and-junk</id>
+    <id>http://tagsoup.github.com/blog/2012/02/25/optimize-my-stuff-and-junk</id>
     <content type="html">&lt;h3&gt;Day 2 of the 30 Day Challenge&lt;/h3&gt;
 
 &lt;p&gt;One of the most important things that you can do for your site is implementing  a good SEO strategy. Whether you are a designer, developer or both, you should have a good understanding of SEO and how to make it work for your site.&lt;/p&gt;
@@ -950,22 +950,22 @@ Keep shorter URLs for friendlier crawling&lt;/p&gt;
 
 &lt;h3&gt;Put on the Northface and have adventurez!&lt;/h3&gt;
 
-&lt;p&gt;&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/adventures.jpg&quot; width=&quot;300&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;left&quot; src=&quot;http://tagsoup.github.com/images/adventures.jpg&quot; width=&quot;300&quot;&gt;&lt;/p&gt;
 </content>
   </entry>
   
   <entry>
     <title>Day 1 of the 30 Day Challenge</title>
-    <link href="http://TagSoup.github.com/blog/2012/02/24/day-1-of-the-30-day-challenge/"/>
+    <link href="http://tagsoup.github.com/blog/2012/02/24/day-1-of-the-30-day-challenge/"/>
     <updated>2012-02-24T20:24:00-07:00</updated>
-    <id>http://TagSoup.github.com/blog/2012/02/24/day-1-of-the-30-day-challenge</id>
+    <id>http://tagsoup.github.com/blog/2012/02/24/day-1-of-the-30-day-challenge</id>
     <content type="html">&lt;p&gt;The idea is to have 30 days (in a row) of blog posts. The authors may vary. Subjects might not be serious; they don&amp;#8217;t need to be. The goal is to get out of our comfort zone and put something out there in hopes of helping / inspiring someone else. Most important, to have fun.&lt;/p&gt;
 
 &lt;p&gt;We need more people to join and post. You can see we have lots of space available. Here&amp;#8217;s &lt;a href=&quot;https://www.google.com/calendar/b/0/embed?src=6tbdk1sbit95epi2bb8c8jqqv4@group.calendar.google.com&amp;amp;ctz=America/Phoenix&quot;&gt;our calendar&lt;/a&gt; showing who&amp;#8217;s posting and when. If you&amp;#8217;re interested shoot a msg to &lt;a href=&quot;https://twitter.com/#!/phxtagsoup&quot;&gt;@phxtagsoup&lt;/a&gt; on twitter.&lt;/p&gt;
 
 &lt;p&gt;Now that the boring stuff is out of the way, here&amp;#8217;s a tiny &amp;#8220;ahhhhhh&amp;#8221; tip I can share. It&amp;#8217;s super basic, but I hear people ask this question all the time.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://TagSoup.github.com/images/undef-jams.png&quot; target=&quot;_new&quot;&gt;&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/undef-jams.png&quot; width=&quot;800&quot; title=&quot;Undef&quot; alt=&quot;Jams&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://tagsoup.github.com/images/undef-jams.png&quot; target=&quot;_new&quot;&gt;&lt;img class=&quot;left&quot; src=&quot;http://tagsoup.github.com/images/undef-jams.png&quot; width=&quot;800&quot; title=&quot;Undef&quot; alt=&quot;Jams&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;So I have a basic function inside of Chrome&amp;#8217;s console. When I press enter, I get the &amp;#8220;undefined&amp;#8221; msg. I haven&amp;#8217;t done anything though, so why the &amp;#8220;undefined&amp;#8221;? Javascript functions ALWAYS return a value. If you don&amp;#8217;t specify what it is, then it returns &amp;#8220;undefined&amp;#8221;. YAY!&lt;/p&gt;
 
@@ -1020,9 +1020,9 @@ Keep shorter URLs for friendlier crawling&lt;/p&gt;
   
   <entry>
     <title>Polling is for chumps - node.js with EventSource</title>
-    <link href="http://TagSoup.github.com/blog/2012/02/22/polling-is-for-chumps/"/>
+    <link href="http://tagsoup.github.com/blog/2012/02/22/polling-is-for-chumps/"/>
     <updated>2012-02-22T00:23:00-07:00</updated>
-    <id>http://TagSoup.github.com/blog/2012/02/22/polling-is-for-chumps</id>
+    <id>http://tagsoup.github.com/blog/2012/02/22/polling-is-for-chumps</id>
     <content type="html">&lt;p&gt;You know what sucks? Making hundreds of round trips to a server to see if there&amp;#8217;s any new data you can grab.&lt;/p&gt;
 
 &lt;p&gt;But modern browsers (well, Firefox and Chrome and Safari) support a much neater option. With the right &lt;code&gt;Content-Type&lt;/code&gt; header, some special sauce in the client, and a modern browser platform, you can use the HTML5 &lt;a href=&quot;http://dev.w3.org/html5/eventsource/&quot;&gt;EventSource API&lt;/a&gt; to establish a single long-term connection for each client, and the server pushes new data whenever necessary.&lt;/p&gt;
@@ -1109,9 +1109,9 @@ console.log(&amp;quot;tailpipe listening on port %d in %s mode&amp;quot;, app.ad
   
   <entry>
     <title>Kitty Corners</title>
-    <link href="http://TagSoup.github.com/blog/2012/01/26/kitty-corners/"/>
+    <link href="http://tagsoup.github.com/blog/2012/01/26/kitty-corners/"/>
     <updated>2012-01-26T18:23:00-07:00</updated>
-    <id>http://TagSoup.github.com/blog/2012/01/26/kitty-corners</id>
+    <id>http://tagsoup.github.com/blog/2012/01/26/kitty-corners</id>
     <content type="html">&lt;div id=&quot;centerer&quot;&gt;
     &lt;div class=&quot;corners&quot;&gt;
         &lt;div class=&quot;shadow&quot;&gt;
@@ -1176,9 +1176,9 @@ console.log(&amp;quot;tailpipe listening on port %d in %s mode&amp;quot;, app.ad
   
   <entry>
     <title>Mobile First Dubstyle - Luke (Dub) W.</title>
-    <link href="http://TagSoup.github.com/blog/2012/01/24/mobile-first-dubstyle-luke-dub-w-dot/"/>
+    <link href="http://tagsoup.github.com/blog/2012/01/24/mobile-first-dubstyle-luke-dub-w-dot/"/>
     <updated>2012-01-24T08:34:00-07:00</updated>
-    <id>http://TagSoup.github.com/blog/2012/01/24/mobile-first-dubstyle-luke-dub-w-dot</id>
+    <id>http://tagsoup.github.com/blog/2012/01/24/mobile-first-dubstyle-luke-dub-w-dot</id>
     <content type="html">&lt;p&gt;This video is from our November 2011 meeting. Luke was nice enough to jump on a Skype call and spend an hour with us. This was one of the first meetings where I saw a very diverse crowd. Normally we&amp;#8217;re 90% developers. This time we had designers, project managers, account managers and developers hanging out talking about the &amp;#8220;Mobile First&amp;#8221; ideology &amp;#x2665; &amp;#x2665;. I have to give a hug(e) thanks to &lt;a href=&quot;http://www.lukew.com/&quot; target=&quot;_new&quot;&gt;Luke W.&lt;/a&gt; for taking the time to talk with us. Please, take the time to add @lukew to your twitter feed (he&amp;#8217;s very active there) and head to his site which is full of crazy good articles.&lt;/p&gt;
 
 &lt;p&gt;Despite a few technical difficulties, this turned out all sparkles!&lt;/p&gt;
@@ -1190,9 +1190,9 @@ console.log(&amp;quot;tailpipe listening on port %d in %s mode&amp;quot;, app.ad
   
   <entry>
     <title>JS Conf Reminder</title>
-    <link href="http://TagSoup.github.com/blog/2012/01/18/js-conf-reminder/"/>
+    <link href="http://tagsoup.github.com/blog/2012/01/18/js-conf-reminder/"/>
     <updated>2012-01-18T10:03:00-07:00</updated>
-    <id>http://TagSoup.github.com/blog/2012/01/18/js-conf-reminder</id>
+    <id>http://tagsoup.github.com/blog/2012/01/18/js-conf-reminder</id>
     <content type="html">&lt;h2&gt;Reminder&lt;/h2&gt;
 
 &lt;p&gt;Arizona developers. Tickets for &lt;a href=&quot;http://2012.jsconf.us&quot; target=&quot;_new&quot;&gt;JS Conf 2012&lt;/a&gt; go on sale today, Jan. 18th 2012, at 1pm AZ Time. If you have any interest in going, tickets sell out very quickly. Load up that browser and get &lt;a href=&quot;http://jsconfus2012.eventbrite.com/&quot; target=&quot;_new&quot;&gt;ready to buy your ticket&lt;/a&gt;.&lt;/p&gt;
@@ -1213,13 +1213,13 @@ console.log(&amp;quot;tailpipe listening on port %d in %s mode&amp;quot;, app.ad
   
   <entry>
     <title>MS Filters Make Me Hate Life - Memoirs of a FE-ender</title>
-    <link href="http://TagSoup.github.com/blog/2011/12/29/ms-filters-make-me-hate-life-memoirs-of-a-fe-ender/"/>
+    <link href="http://tagsoup.github.com/blog/2011/12/29/ms-filters-make-me-hate-life-memoirs-of-a-fe-ender/"/>
     <updated>2011-12-29T14:29:00-07:00</updated>
-    <id>http://TagSoup.github.com/blog/2011/12/29/ms-filters-make-me-hate-life-memoirs-of-a-fe-ender</id>
+    <id>http://tagsoup.github.com/blog/2011/12/29/ms-filters-make-me-hate-life-memoirs-of-a-fe-ender</id>
     <content type="html">&lt;h4&gt;Here&amp;#8217;s a screen shot of my issue. Notice the sub nav being cut off!&lt;/h4&gt;
 
 &lt;div class=&quot;clearfix&quot;&gt;
-&lt;a href=&quot;http://TagSoup.github.com/images/nav-barf.jpg&quot; target=&quot;_new&quot;&gt;&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/nav-barf.jpg&quot; width=&quot;300&quot; height=&quot;197&quot; title=&quot;Why does&quot; alt=&quot;IE Hate Developers?&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;http://tagsoup.github.com/images/nav-barf.jpg&quot; target=&quot;_new&quot;&gt;&lt;img class=&quot;left&quot; src=&quot;http://tagsoup.github.com/images/nav-barf.jpg&quot; width=&quot;300&quot; height=&quot;197&quot; title=&quot;Why does&quot; alt=&quot;IE Hate Developers?&quot;&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 
@@ -1322,9 +1322,9 @@ console.log(&amp;quot;tailpipe listening on port %d in %s mode&amp;quot;, app.ad
   
   <entry>
     <title>Editor, Y U Do That - Sublime 2, Whitespace and Git conflicts</title>
-    <link href="http://TagSoup.github.com/blog/2011/12/08/Sublime-2/"/>
+    <link href="http://tagsoup.github.com/blog/2011/12/08/Sublime-2/"/>
     <updated>2011-12-08T23:58:00-07:00</updated>
-    <id>http://TagSoup.github.com/blog/2011/12/08/Sublime-2</id>
+    <id>http://tagsoup.github.com/blog/2011/12/08/Sublime-2</id>
     <content type="html">&lt;p&gt;I recently changed text editors. For any dev, this is a big deal. We&amp;#8217;re talking changing religions big. I had been using TextMate for about 4 years. I love TextMate. Then, I started hearing more and more about Sublime 2. So I decided to give it a whirl. And, after 10 days, I&amp;#8217;m hooked. Thanks Ryan Mathis!&lt;/p&gt;
 
 &lt;p&gt;I wanted to point out a small feature/issue I ran into today. Sublime 2 has a config that will trim white space at the end of lines. It&amp;#8217;s really useful and in most cases a great feature.&lt;/p&gt;
@@ -1352,9 +1352,9 @@ console.log(&amp;quot;tailpipe listening on port %d in %s mode&amp;quot;, app.ad
   
   <entry>
     <title>More Notes From: OMG That’s So Kewl - Show and Tell</title>
-    <link href="http://TagSoup.github.com/blog/2011/12/03/more-notes-from-omg-thats-so-kewl-show-and-tell/"/>
+    <link href="http://tagsoup.github.com/blog/2011/12/03/more-notes-from-omg-thats-so-kewl-show-and-tell/"/>
     <updated>2011-12-03T23:27:00-07:00</updated>
-    <id>http://TagSoup.github.com/blog/2011/12/03/more-notes-from-omg-thats-so-kewl-show-and-tell</id>
+    <id>http://tagsoup.github.com/blog/2011/12/03/more-notes-from-omg-thats-so-kewl-show-and-tell</id>
     <content type="html">&lt;p&gt;Here is the video from our final, special guest, Paul Irish. Paul is an amazing developer. Some how, while releasing libraries like HTML5 BP and Modernizr, he is still able to find the time to talk to Phx Tag Soup. This screencast is about the Modernizr Test Suite. I will be blogging more about this specific meet-up and what it meat to me personally soon. For now, enjoy!&lt;/p&gt;
 
 &lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/5bdVgy1dROk&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
@@ -1366,9 +1366,9 @@ console.log(&amp;quot;tailpipe listening on port %d in %s mode&amp;quot;, app.ad
   
   <entry>
     <title>HTML History API with Luke Karrys</title>
-    <link href="http://TagSoup.github.com/blog/2011/10/28/html5-history-api-with-luke-karrys/"/>
+    <link href="http://tagsoup.github.com/blog/2011/10/28/html5-history-api-with-luke-karrys/"/>
     <updated>2011-10-28T02:17:00-07:00</updated>
-    <id>http://TagSoup.github.com/blog/2011/10/28/html5-history-api-with-luke-karrys</id>
+    <id>http://tagsoup.github.com/blog/2011/10/28/html5-history-api-with-luke-karrys</id>
     <content type="html">&lt;p&gt;Hey everyone, &lt;a href=&quot;http://twitter.com&quot;&gt;Luke Karrys&lt;/a&gt; here, I&amp;#8217;m forking ur Octopress, adding my postz.&lt;/p&gt;
 
 &lt;p&gt;I gave a presentation at the meetup on &lt;a href=&quot;http://tagsoup.github.com/blog/2011/10/24/new-post/&quot;&gt;Thursday, October 27&lt;/a&gt; titled &lt;a href=&quot;http://lukecod.es/presentation-slides/html5-history-102711&quot;&gt;&amp;#8220;HTML History &amp;amp; You (and how to keep your hair when working with it)&amp;#8221;&lt;/a&gt;. If you couldn&amp;#8217;t make it (or if you just didn&amp;#8217;t get enough the first time), &lt;a href=&quot;http://lukecod.es/presentation-slides/html5-history-102711&quot;&gt;check out the slides&lt;/a&gt; (or &lt;a href=&quot;https://github.com/lukekarrys/presentation-slides&quot;&gt;fork &amp;#8216;em on GitHub&lt;/a&gt;). Hit me up on &lt;a href=&quot;http://twitter.com&quot;&gt;Twitter&lt;/a&gt; or &lt;a href=&quot;https://github.com/lukekarrys&quot;&gt;GitHub&lt;/a&gt; with questions, comments or critiques. I&amp;#8217;d be happy to hear it all.&lt;/p&gt;
@@ -1379,22 +1379,22 @@ console.log(&amp;quot;tailpipe listening on port %d in %s mode&amp;quot;, app.ad
   
   <entry>
     <title>OMG That is So Kewl - Show and Tell</title>
-    <link href="http://TagSoup.github.com/blog/2011/10/24/omg-thats-so-kewl/"/>
+    <link href="http://tagsoup.github.com/blog/2011/10/24/omg-thats-so-kewl/"/>
     <updated>2011-10-24T23:03:00-07:00</updated>
-    <id>http://TagSoup.github.com/blog/2011/10/24/omg-thats-so-kewl</id>
+    <id>http://tagsoup.github.com/blog/2011/10/24/omg-thats-so-kewl</id>
     <content type="html">&lt;p&gt;This Thursday, (October 27, 2011, 6:30 PM) we will be hosting the next Phx Tag Soup event. &lt;a href=&quot;http://maps.google.com/maps?q=425+S.+Mill+Ave+%23201,+Tempe,+AZ&amp;hnear=425+S+Mill+Ave,+Tempe,+Arizona+85281&amp;t=h&amp;z=16&amp;vpsrc=0&quot;&gt;Terralever&lt;/a&gt; has been nice enough to let us use their space again.&lt;/p&gt;
 
 &lt;p&gt;This month a couple of Phx locals will be giving short (10-15min) talks on projects they&amp;#8217;ve been developing. We also have some non-locals giving lightening web talks about their projects.&lt;/p&gt;
 
 &lt;div class=&quot;clearfix&quot;&gt;
-&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/speakers/luke.jpeg&quot; width=&quot;128&quot; height=&quot;128&quot; title=&quot;Manveloper&quot; alt=&quot;Luke Karrys, Mustached Manveloper&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://tagsoup.github.com/images/speakers/luke.jpeg&quot; width=&quot;128&quot; height=&quot;128&quot; title=&quot;Manveloper&quot; alt=&quot;Luke Karrys, Mustached Manveloper&quot;&gt;
 The Mustached Manveloper, Luke Karrys (&lt;a href=&quot;http://twitter.com/#!/lukekarrys&quot;&gt;@lukekarrys&lt;/a&gt;), will talk about the pain points he ran into with his HTML5 history API capable site he recently worked. Plus, discussing how he can pack so many buzzwords into a single project.&lt;/div&gt;
 
 
 
 
 &lt;div class=&quot;clearfix&quot;&gt;
-&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/speakers/alan.jpeg&quot; width=&quot;128&quot; height=&quot;128&quot; title=&quot;Alan Hogan&quot; alt=&quot;Alan Hogan&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://tagsoup.github.com/images/speakers/alan.jpeg&quot; width=&quot;128&quot; height=&quot;128&quot; title=&quot;Alan Hogan&quot; alt=&quot;Alan Hogan&quot;&gt;
 Alan Hogan (&lt;a href=&quot;http://twitter.com/#!/AlanHogan&quot;&gt;@AlanHogan&lt;/a&gt;) is going talk about when your plan might not go quite as planned&amp;#8230; see what I did there?
 &lt;/div&gt;
 
@@ -1403,7 +1403,7 @@ Alan Hogan (&lt;a href=&quot;http://twitter.com/#!/AlanHogan&quot;&gt;@AlanHogan
 
 &lt;div class=&quot;clearfix&quot;&gt;
 Then, via the internets:
-&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/speakers/ray.jpeg&quot; width=&quot;128&quot; height=&quot;128&quot; title=&quot;Ray Morgan&quot; alt=&quot;Ray Morgan&quot;&gt;
+&lt;img class=&quot;left&quot; src=&quot;http://tagsoup.github.com/images/speakers/ray.jpeg&quot; width=&quot;128&quot; height=&quot;128&quot; title=&quot;Ray Morgan&quot; alt=&quot;Ray Morgan&quot;&gt;
 Our friends in Las Vegas have been busy writing an iOS app called &lt;a href=&quot;http://www.rumgr.com&quot;&gt;Rumgr&lt;/a&gt;. Started by Zappos developers Dylan Bathurst (&lt;a href=&quot;http://twitter.com/#!/dylanbathurst&quot;&gt;@dylanbathurst&lt;/a&gt;) and Ray C. Morgan (&lt;a href=&quot;http://twitter.com/#!/raycmorgan&quot;&gt;@raycmorgan&lt;/a&gt;), Rumgr has gone on to win some serious awards. Since it&amp;#8217;s launch Ray and Dylan have left Zappos to live the startup dream. And that&amp;#8217;s exactly what Ray will be talking about.
 &lt;/div&gt;
 
@@ -1418,9 +1418,9 @@ Our friends in Las Vegas have been busy writing an iOS app called &lt;a href=&qu
   
   <entry>
     <title>Ryan Dahl&#8217;s History of Node.js</title>
-    <link href="http://TagSoup.github.com/blog/2011/10/05/ryan-dahls-history-of-node-dot-js/"/>
+    <link href="http://tagsoup.github.com/blog/2011/10/05/ryan-dahls-history-of-node-dot-js/"/>
     <updated>2011-10-05T21:04:00-07:00</updated>
-    <id>http://TagSoup.github.com/blog/2011/10/05/ryan-dahls-history-of-node-dot-js</id>
+    <id>http://tagsoup.github.com/blog/2011/10/05/ryan-dahls-history-of-node-dot-js</id>
     <content type="html">&lt;p&gt;Being a late on anything sucks right? But being late is always better than not finishing what you set out to do. So I just want to do a small recap of September&amp;#8217;s meet-up. Bottom line, Ryan fucking Dahl (&lt;a href=&quot;http://twitter.com/#!/ryah&quot;&gt;@ryah&lt;/a&gt;)!! Ryan was nice enough to take some time to talk to us about the history of &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt;. He&amp;#8217;s never really told this story until now. Thanks so much Ryan&lt;/p&gt;
 
 &lt;p&gt;Check out the video here:&lt;/p&gt;
@@ -1436,9 +1436,9 @@ Our friends in Las Vegas have been busy writing an iOS app called &lt;a href=&qu
   
   <entry>
     <title>Mmmm Soup</title>
-    <link href="http://TagSoup.github.com/blog/2011/10/02/mmmm-soup/"/>
+    <link href="http://tagsoup.github.com/blog/2011/10/02/mmmm-soup/"/>
     <updated>2011-10-02T21:21:00-07:00</updated>
-    <id>http://TagSoup.github.com/blog/2011/10/02/mmmm-soup</id>
+    <id>http://tagsoup.github.com/blog/2011/10/02/mmmm-soup</id>
     <content type="html">&lt;p&gt;Whoo Hoo! First post! So, we&amp;#8217;ve found a home. Maybe temporary, might be permanent. We still haven&amp;#8217;t decided. But let&amp;#8217;s get into it.&lt;/p&gt;
 
 &lt;p&gt;Who are we? The answer is simple. We&amp;#8217;re a group developers (client side, server side and even UX/UI side) in the Phoenix area. We all love the interactive space. We also want to make the web more fun.&lt;/p&gt;
