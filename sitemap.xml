@@ -2,7 +2,7 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://TagSoup.github.com/blog/2011/10/02/mmmm-soup/</loc>
-        <lastmod>2012-02-27T10:08:40-07:00</lastmod>
+        <lastmod>2012-02-28T09:15:33-07:00</lastmod>
     </url>
     <url>
         <loc>http://TagSoup.github.com/blog/2011/10/05/ryan-dahls-history-of-node-dot-js/</loc>
@@ -30,7 +30,7 @@
         <loc>
             http://TagSoup.github.com/blog/2011/12/29/ms-filters-make-me-hate-life-memoirs-of-a-fe-ender/
         </loc>
-        <lastmod>2012-02-27T10:08:40-07:00</lastmod>
+        <lastmod>2012-02-28T09:15:21-07:00</lastmod>
     </url>
     <url>
         <loc>http://TagSoup.github.com/blog/2012/01/18/js-conf-reminder/</loc>
@@ -42,7 +42,7 @@
     </url>
     <url>
         <loc>http://TagSoup.github.com/blog/2012/01/26/kitty-corners/</loc>
-        <lastmod>2012-02-27T10:08:40-07:00</lastmod>
+        <lastmod>2012-02-28T09:15:13-07:00</lastmod>
     </url>
     <url>
         <loc>http://TagSoup.github.com/blog/2012/02/22/polling-is-for-chumps/</loc>
@@ -50,25 +50,25 @@
     </url>
     <url>
         <loc>http://TagSoup.github.com/blog/2012/02/24/day-1-of-the-30-day-challenge/</loc>
-        <lastmod>2012-02-27T10:08:40-07:00</lastmod>
+        <lastmod>2012-02-28T09:14:57-07:00</lastmod>
     </url>
     <url>
         <loc>http://TagSoup.github.com/blog/2012/02/25/optimize-my-stuff-and-junk/</loc>
-        <lastmod>2012-02-27T10:08:40-07:00</lastmod>
+        <lastmod>2012-02-28T09:14:40-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://TagSoup.github.com/blog/2012/02/26/ill-show-you-mine-if-you-show-me-yours/
         </loc>
-        <lastmod>2012-02-27T10:08:40-07:00</lastmod>
+        <lastmod>2012-02-28T09:14:17-07:00</lastmod>
     </url>
     <url>
         <loc>http://TagSoup.github.com/blog/2012/02/27/day-4-drunk-and-pushing-state/</loc>
-        <lastmod>2012-02-28T08:12:28-07:00</lastmod>
+        <lastmod>2012-02-28T09:22:12-07:00</lastmod>
     </url>
     <url>
         <loc>http://TagSoup.github.com/blog/archives/</loc>
-        <lastmod>2012-02-28T08:12:28-07:00</lastmod>
+        <lastmod>2012-02-28T09:22:12-07:00</lastmod>
     </url>
     <url>
         <loc>http://TagSoup.github.com/how-to-contribute/</loc>
@@ -76,6 +76,6 @@
     </url>
     <url>
         <loc>http://TagSoup.github.com/</loc>
-        <lastmod>2012-02-28T08:12:28-07:00</lastmod>
+        <lastmod>2012-02-28T09:22:12-07:00</lastmod>
     </url>
 </urlset>

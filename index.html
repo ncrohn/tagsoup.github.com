@@ -9,7 +9,7 @@
   <meta name="author" content="Phx Tag Soup">
 
   
-  <meta name="description" content="In the immortal words or Colonel Sanders, I&#8217;m too drunk to write this blog post. But eff it (note: I don&#8217;t know if Colonel Sanders said &hellip;">
+  <meta name="description" content="In the immortal words or of Colonel Sanders, I&#8217;m too drunk to write this blog post. But eff it (note: I don&#8217;t know if Colonel Sanders &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -90,7 +90,7 @@
   </header>
 
 
-  <div class="entry-content"><p>In the immortal words or Colonel Sanders, I&#8217;m too drunk to write this blog post. But eff it (note: I don&#8217;t know if Colonel Sanders said that part). Don&#8217;t take this as a knock that I don&#8217;t care about this blog post because I do. The HTML5 history API is one of my favorite things ever (and Tony Camp is one of my personal heroes). If the HTML5 history API (or Tony Camp) came up to me and said, &#8220;Hey baby, I work to spec in all the latest browsers and degrade gracefully in the others. What are you doing later?&#8221; I would say, &#8220;Writing some code. See you later.&#8221; I love it so much, I gave a talk about it at a previous <a href="http://tagsoup.github.com/blog/2011/10/28/html5-history-api-with-luke-karrys/">Tag Soup meetup</a>. But here I am going to tell you how to convert your current Octopress blog into an Octopress blog that uses HTML5 pushState (and how to report bugs to me where I messed up, because I definitely did).</p>
+  <div class="entry-content"><p>In the immortal words <del>or</del> <em>of</em> Colonel Sanders, I&#8217;m too drunk to write this blog post. But eff it (note: I don&#8217;t know if Colonel Sanders said that part). Don&#8217;t take this as a knock that I don&#8217;t care about this blog post because I do. The HTML5 history API is one of my favorite things ever (and Tony Camp is one of my personal heroes). If the HTML5 history API (or Tony Camp) came up to me and said, &#8220;Hey baby, I work to spec in all the latest browsers and degrade gracefully in the others. What are you doing later?&#8221; I would say, &#8220;Writing some code. See you later.&#8221; I love it so much, I gave a talk about it at a previous <a href="http://tagsoup.github.com/blog/2011/10/28/html5-history-api-with-luke-karrys/">Tag Soup meetup</a>. But here I am going to tell you how to convert your current Octopress blog into an Octopress blog that uses HTML5 pushState (and how to report bugs to me where I messed up, because I definitely did).</p>
 
 </div>
   
@@ -138,154 +138,12 @@
 <p>Enough words, how about some hawt pics?
 <img class="left" src="/images/zsh.png" width="800"></p>
 
-<h4>What are you staring at?</h4>
-
-<p>Well, that&#8217;s my desktop, with some icons, a nice desktop pic and of course my terminal. I like the way it all looks. How come your Terminal doesn&#8217;t look like that? Maybe I can help. If you&#8217;re running OSX Lion and haven&#8217;t already switched the default bash shell to zsh, you might want to do that now. Why switch? There are a ton of articles out on google explaning why people like it so much. For me, it comes down to a few basic benefits:</p>
-
-<ol>
-    <li>Powerful tab completetion</li>
-    <li>Styling</li>
-    <li>Plugins</li>
-    <li>Auto correct</li>
-</ol>
-
-
-<h3>Switching to zsh</h3>
-
-<p>This part is easy, just go to your System Preferences and click on Users &amp; Groups. Right click, or Control-Click on your username and open up the Advanced Options. If you&#8217;re not able to Right-Click or Control-Click on your username, make sure the lock icon in the bottom left of the window is unlocked. Just click on it to toggle. Look for the dropdown for Login Shell and choose <code>/bin/zsh</code>. Fin</p>
-
-<h3>Oh My ZSH</h3>
-
-<p>The next very handy tool that goes hand in hand with zsh is <a href="https://github.com/robbyrussell/oh-my-zsh">Oh-My-Zsh</a>. Oh-My-Zsh really starts to open up the &#8220;Styling&#8221; and &#8220;Plugin&#8221; benefits I brought up earlier. Please, take the time to check out the repo and check out everything is has to offer. I&#8217;m not going to try to get into all of it on this post.</p>
-
-<h3>Customizing Terminal</h3>
-
-<p>I&#8217;m using <a href="https://github.com/tomislav/osx-lion-terminal.app-colors-solarized">Tomislav Filipčić&#8217;s Solarized theme</a> for my Terminal. Grab that, unzip it and run the Solarized Dark.terminal file. This will create a new theme based on the ever popular <a href="http://ethanschoonover.com/solarized">Solarized by Ethan Schoonover</a>. Select Solarized Dark under Terminal > Preferences > Settings.</p>
-
-<p><img class="center" src="/images/solarized.dark.png" width="500" title="'term bo'" ></p>
-
-<h3>Customizing Oh-My-Zsh</h3>
-
-<p>Most of the customizations will be set in your .zshrc file. I&#8217;m assuming your Terminal is already open and hopefully you already your shell set to zsh. Type <code>~/.</code> and press <code>Tab</code>. Autocomplete, yah, no HUGE difference yet. Press <code>Tab</code> again. Yay, our first noticeable change. You can Tab-cycle through the files/dirs. Look for <code>.zshrc</code>.  This is your zsh profile. Look for the line that starts with <code>ZSH_THEME=</code>. This is where we are going to set our theme. <a href="https://github.com/robbyrussell/oh-my-zsh/wiki/themes">Check out some of the zsh themes.</a> I have mine set to blinks. But it&#8217;s not the default blinks. I have done some tweaking on it. Since this section is about customizing, let&#8217;s get to it.</p>
-
-<div><script src='https://gist.github.com/1921784.js?file=zsh'></script>
-<noscript><pre><code># https://github.com/blinks zsh theme
-
-function _prompt_char() {
-  if $(git rev-parse --is-inside-work-tree &gt;/dev/null 2&gt;&amp;1); then
-    echo &quot;%{%F{blue}%}±%{%f%k%b%}&quot;
-  else
-    echo ' '
-  fi
-}
-
-#ZSH_THEME_GIT_PROMPT_PREFIX=&quot; [%{%B%F{blue}%}&quot;
-#ZSH_THEME_GIT_PROMPT_SUFFIX=&quot;%{%f%k%b%K{black}%B%F{green}%}]&quot;
-#ZSH_THEME_GIT_PROMPT_DIRTY=&quot; %{%F{red}%}*%{%f%k%b%}&quot;
-#ZSH_THEME_GIT_PROMPT_CLEAN=&quot;&quot;
-
-project_pwd() {
-  echo $PWD | sed -e &quot;s/\/Users\/$USER/~/&quot; -e &quot;s/~\/projects\/\([^\/]*\)\/current/\\1/&quot; -e &quot;s/~\/Sites\/\([^\/]*\)\/current/http:\/\/\\1/&quot;
-}
-
-ruby_version() {
-  echo &quot; $(ruby -v | awk '{print $2}')&quot;
-}
-
-in_git_repo() {
- [ $PWD != &quot;/Users/$HOME&quot; ] &amp;&amp; [ -d '.git' ]
-}
-
-git_parse_branch() {
-  sed -e 's/^.*refs\/heads\///' '.git/HEAD'
-}
-
-git_head_commit_id() {
-  cut -c 1-7 &quot;.git/refs/heads/`git_parse_branch`&quot;
-}
-
-git_cwd_dirty() {
-  [[ `git ls-files -m` == '' ]] || echo ' +'
-}
-
-
-git_cwd_info() {
-  if in_git_repo; then
-    echo -n &quot; %{\e[1;35m%}`git_parse_branch`%{\e[0;35m%}@%{\e[1;35m%}`git_head_commit_id``git_cwd_dirty`%{\e[1;35m%}&quot;
-  fi
-}
-
-export PROMPT=$'%{\e[1;34m%}%n@\e[1;34m%M%{\e[0m%}
-%{\e[0;%(?.32.31)m%}&gt;%{\e[0m%} '
-
-export RPROMPT=$'%{\e[1;31m%}$(project_pwd)%{\e[0;34m%}$(ruby_version)$(git_cwd_info)%{\e[0m%}'
-
-#Original blinks prompt
-#PROMPT='
-#%{%K{black}%}$(_prompt_char)%{%K{black}%} %#%{%f%k%b%} '
-
-#RPROMPT='%{%b%F{yellow}%K{black}%}%~%{%B%F{green}%}$(git_prompt_info)'
-</code></pre></noscript></div>
-
-
-<p>There&#8217;s a lot going on here. A lot. Without going too crazy, let&#8217;s look at one small chunk to see what it&#8217;s doing.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>export PROMPT=$'%{\e[1;34m%}%n@\e[1;34m%M%{\e[0m%}
-</span><span class='line'>%{\e[0;%(?.32.31)m%}&gt;%{\e[0m%} '
-</span><span class='line'>
-</span><span class='line'>export RPROMPT=$'%{\e[1;31m%}$(project_pwd)%{\e[0;34m%}$(ruby_version)$(git_cwd_info)%{\e[0m%}'</span></code></pre></td></tr></table></div></figure>
-
-
-<p>So zsh let&#8217;s have have a &#8220;left&#8221; (PROMPT) and &#8220;right&#8221; (RPROMPT) side of the prompt. On the left (again PROMPT), I like it nice and plain. So we&#8217;re outputting the username@system-name. Then we have a line break where our prompt will be. And on the right hand side of the screen (RPROMPT), we have even more useful info. We&#8217;re displaying the current directory, the version of Ruby, the current git branch and SHA. I have added some fun colors to it, cause you know, colors are good mmmkay.</p>
-
-<h3>On to plugins</h3>
-
-<p>The plugins in zsh are really useful. They will extend autocompletion for you and set up some aliases for you. Back in your <code>~/.zshrc</code> file look for the line that starts with:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'># Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-</span><span class='line'># Example format: plugins=(rails git textmate ruby lighthouse)</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The plugins I have installed are git, github, node, gem, rails, ant. It looks like this:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'># Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-</span><span class='line'># Example format: plugins=(rails git textmate ruby lighthouse)
-</span><span class='line'>plugins=(git github node npm gem rails ant)</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Most of these I don&#8217;t use to their fullest. But you can <a href="https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/git/git.plugin.zsh">take a look at some of the things the git plugin is doing for us.</a> If you&#8217;re using git a lot, some of the aliases will save you some time. <a href="https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins">Check out all of the available plugins for zsh.</a></p>
-
-<p>I&#8217;m by no means a shell, or zsh expert. I&#8217;m still learning a ton as I go. The day I spent getting Solarized set up and the prompt on the right caused big head aches for me. I have a whole list of git aliases, and standard aliases to share that will tie in nicely with this post but, this post has already gotten much longer than I like. TL:DR. If you have any questions, please feel free to ask. I will do my best in answering or finding an answer. Use the comments below or msg me on github.</p>
-
-<h3>Hepful Links</h3>
-
-<p><a href="https://github.com/robbyrussell/oh-my-zsh">Oh My ZSH github repo</a><br />
-<a href="http://www.zsh.org/">ZSH Homepage</a> - A little overwhelming<br />
-<a href="http://stevelosh.com/blog/2010/02/my-extravagant-zsh-prompt/">Steve&#8217;s Extravagant Zsh Prompt</a><br />
-<a href="https://twitter.com/#!/ohmyzsh">Oh My ZSH Twitter</a> - Blue birds<br /></p>
-
-<div class="clearfix">
-<img class="left" src="/images/whip-it.jpg" width="60">
-<img class="left" src="/images/whip-it.jpg" width="60">
-<img class="left" src="/images/whip-it.jpg" width="60">
-<img class="left" src="/images/whip-it.jpg" width="60">
-<img class="left" src="/images/whip-it.jpg" width="60">
-<img class="left" src="/images/whip-it.jpg" width="60">
-</div>
-
-
-
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/02/26/ill-show-you-mine-if-you-show-me-yours/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -329,66 +187,12 @@ export RPROMPT=$'%{\e[1;31m%}$(project_pwd)%{\e[0;34m%}$(ruby_version)$(git_cwd_
 
 <p>Whats a good strategy to follow? The first thing to know about SEO is that “Content is King”. Don’t try to chase algorithm changes in Google or Bing. Your time will be more productive if you concentrate on keeping good and relevant content on your site. Have good content and change it often. Good SEO will get people to your site but good content will keep them there and coming back.</p>
 
-<p>Do your keyword research. Find out what people are searching for in your industry and integrate these into your content. The key word here is integrate not shoe-horn. Spammy content will just frustrate and confuse your visitors.</p>
-
-<p>There are many gems that can come out of your keyword research. Imagine you run a ticketing website that does well for the Keyword “Bob Dylan Tickets”. You are doing your keyword research and notice that a lot of people are searching for Bob Dylan tickets in Minnesota. You can optimize your Bob Dylan page for Minnesota but that would change your rankings for your Bob Dylan results. Instead if you create a Bob Dylan Minnesota page with information specifically about the venues and performances by Dylan in Minnesota. This will allow you to keep your good standings in “Bob Dylan Tickets” results as well as getting you another page in the results that targeted that large demographic of visitors. A caveat to this is that you would want to use this sparingly. Too much of this and your content can become unmanageable.</p>
-
-<p>Take a look at your site and analyze your content and other items that can factor into your SEO. I have broken up the factors for SEO into 3 different areas. On Page, Off Page and On Site. Here is a brief list. I will expand on each of these in my up coming posts.
-On Page Factors</p>
-
-<h3>These are elements on your web page that will affect you organic search position:</h3>
-
-<dl>
-    <dt>Title Tag</dt>
-    <dd>The most important element of on page to spiders. Put your most important keywords in the title tag. Put your most important one first.</dd>
-    <dt>Meta Tags</dt>
-    <dd>Not much weight, if any, is given to these anymore, but they are important for showing the description that you want shown in your search engine results. Keyword and Description meta tags are the main ones to focus on.</dd>
-    <dt>Heading tags</dt>
-    <dd>This is second to the title tag as the most important element on the page. H1 being the most important and H6 being the least. You want to stick with one H1 tag with your most important key terms in them. You can have multiple H2 -H6’s but you want to keep this to a minimum because it can be viewed as spamming and will dilute your page weight.</dd>
-    <dt>Inter Linking</dt>
-    <dd>See On Site Factors</dd>
-    <dt>Link Density</dt>
-    <dd>You want to keep the links on your pages to a maximum 100. Anything after 100 links that a bot sees on your site will be ignored</dd>
-    <dt>Formatting tags</dt>
-    <dd>Formatting tags like the `strong`, `em`, and heading tags will make the content that is in them look more important to spiders.</dd>
-    <dt>Keyword Density</dt>
-    <dd>The more of a keyword phrase you have on your page the better it will rank for that term. You don&#8217;t want to overdo it because that will end up looking like spam. You want to keep it spread out throughout the page and slightly vary it in places.</dd>
-    <dt>Keyword Position</dt>
-    <dd>The content that is higher on the page will be looked at as more important than content that is lower on the page.</dd>
-</dl>
-
-
-<h3>On Site Factors</h3>
-
-<p>These are elements that are in your site but not necessarily on any page:</p>
-
-<dl>
-    <dt>Robots.txt</dt>
-    <dd>text file that is in the root of your site that tells bots where they can and cant go on the site.</dd>
-    <dt>Site Map </dt>
-    <dd>Usually and XML file that has all of the files in your site listed. Tells search engines about your content and makes it easier for them to index your content. You usually have to upload this via a Web Master interface for each search engine.</dd>
-    <dt>Inter Linking</dt>
-    <dd>You want to link your pages together so that when one page get crawled the spider can more easily have access to the rest of the pages on your site instead of hitting a dead end. </dd>
-</dl>
-
-
-<p>Keep important information at least 4 clicks deep, no more. Closer to the root the better.
-Keep shorter URLs for friendlier crawling</p>
-
-<h3>Off Page Factors</h3>
-
-<dl>
-    <dt>Links to your site</dt>
-    <dd>This is the most important off page factor. Search engines factor how important you site is based on how many people are linking to you. The more the better. The anchor text of these incoming links will also affect your site. The anchor text will add to how your site is seen by Google.
-    EX: Some one links to pixelrex.com with the anchor text of “Cool Design Site” . Google will then increase the positioning of pixelrex.com for the search term “Cool Design Site”</dd>
-</dl>
-
-
-<h3>Put on the Northface and have adventurez!</h3>
-
-<p><img class="left" src="/images/adventures.jpg" width="300"></p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/02/25/optimize-my-stuff-and-junk/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -432,51 +236,12 @@ Keep shorter URLs for friendlier crawling</p>
 
 <p>So I have a basic function inside of Chrome&#8217;s console. When I press enter, I get the &#8220;undefined&#8221; msg. I haven&#8217;t done anything though, so why the &#8220;undefined&#8221;? Javascript functions ALWAYS return a value. If you don&#8217;t specify what it is, then it returns &#8220;undefined&#8221;. YAY!</p>
 
-<p>If you would like a more elegant explanation, check out the ever useful, <a href="http://stackoverflow.com/questions/903120/should-i-always-give-a-return-value-to-my-function/903126#903126">Stack Overflow</a>.</p>
-
-<p>Since we&#8217;re on the topic of <code>return</code> values&#8230; let&#8217;s go over another small trick. Again, it&#8217;s nothing mind blowing or revolutionary. I&#8217;m sure you&#8217;ve seen this pattern before (assume hondaElement is a class on an &#8220;a&#8221; tag:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$('#coolElement').delegate('.hondaElement', 'click', function(e) {
-</span><span class='line'>  // do something silly here
-</span><span class='line'>  e.preventDefault();
-</span><span class='line'>});</span></code></pre></td></tr></table></div></figure>
-
-
-<p>preventDefault&#8230; well, read that out loud and I bet you can guess what it&#8217;s doing.</p>
-
-<p>And here&#8217;s another common pattern that is used:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$('#coolElement').delegate('.hondaElement', 'click', function() {
-</span><span class='line'>  // do something silly here
-</span><span class='line'>  return false;
-</span><span class='line'>});</span></code></pre></td></tr></table></div></figure>
-
-
-<p>So, both examples stop the default action of the <code>a</code> firing when clicked. The second example takes things a bit further. It not only stops the default action from firing, it also stops event bubbling. It&#8217;s the same as doing:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$('#coolElement').delegate('.hondaElement', 'click', function(e) {
-</span><span class='line'>  // do something silly here
-</span><span class='line'>  e.preventDefault();
-</span><span class='line'>  e.stopPropagation();
-</span><span class='line'>});</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Now, the caveat&#8230; I believe this only applies to jQuery. Vanilla js still needs to have both <code>e.preventDefault()</code> and <code>e.stopPropagation()</code>. If anyone has some extra info on that, please, leave a comment and set the record straight.</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/02/24/day-1-of-the-30-day-challenge/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -639,51 +404,12 @@ console.log(&quot;tailpipe listening on port %d in %s mode&quot;, app.address().
 
 <p>As developers, we&#8217;re constantly trying to &#8220;level-up&#8221;. Becoming a better developer is all about writing code. A goofy, but fun exercise I do from time to time involves browsing <a href="http://www.dribbble.com" target="_new"/>dribbble</a>. I browse some of the great pieces of art on there and try to emulate it with CSS. I came across a piece by <a href="http://dribbble.com/larrychen" target="_new">Larry Chen</a> called <a href="http://dribbble.com/shots/118282-Photo-Border-Style" target="_new">Photo Border Style</a>. I figured I could whip up that border treatment pretty easily.</p>
 
-<p>I knew <a href="http://css-tricks.com/pseudo-element-roundup/" target="_new">CSS pseudo elements</a> would be necessary. I had seen a couple of blog posts showing how to manipulate css borders to make triangles <a href="http://www.russellheimlich.com/blog/pure-css-shapes-triangles-delicious-logo-and-hearts/" target="_new">(like this one)</a>. I figured I would just toss a :before and :after pseudo element on the image and get a nice start on my border treatment.</p>
-
-<h3><a href="http://jsfiddle.net/tonyjcamp/rATuB/" target="_new">Snag #1</a></h3>
-
-<p>Now, I messed with that pseudo element for a while and nothing was working. I thought I was going crazy. I wasn&#8217;t, <a href="http://stackoverflow.com/questions/6949148/css-after-not-adding-content-to-certain-elements/6949190#6949190" target="_blank">pseudo elements can&#8217;t be used on image tags</a>?!? Why? :before and :after only work with non-replaced elements. A replaced element is any element whose appearance and dimensions are defined by an external resource. So, yup, an img falls under this category. So my first idea is a no go&#8230; moving on.</p>
-
-<p>Once I found out I couldn&#8217;t use the pseudo elements on the img tags, I plopped in some span tags and added my pseudo elements. I had a white triangle overlapping the top left and bottom right corners. I was getting somewhere.</p>
-
-<h3><a href="http://jsfiddle.net/tonyjcamp/5J2LZ/1/" target="_new">Level +1</a></h3>
-
-<p>The next task is getting the hairline drop shadows on the corner treatments. After thinking a bit, I had an easy solution. I would just add another triangle underneath it. This would be a tad bigger and blacker, but with some opacity. It turned out, the idea worked nicely.</p>
-
-<h3><a href="http://jsfiddle.net/tonyjcamp/rATuB/2/" target="_new">Level +1</a></h3>
-
-<p>As you can see, the CSS is pretty messy. Lots of repetition, no inheritance, it was mostly just idea barf. Which is ok, but not final. More importantly, the damn thing doesn&#8217;t scale&#8230;</p>
-
-<h3><a href="http://jsfiddle.net/tonyjcamp/x9knt/" target="_new">Snag #2 - Y U NO SCALE BRO?</a></h3>
-
-<p>Adding the image to scale and keep the border treatment wasn&#8217;t too bad, just change the display property on the container div</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>display: inline-block;</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Now comes the markup and the CSS clean up. Here&#8217;s where I ended up.</p>
-
-<h3><a href="http://jsfiddle.net/tonyjcamp/rATuB/18/" target="_new">Level +1 - FINISH</a></h3>
-
-<p>I changed a few elements around. I added a div to center the image in the fiddle (totally not needed). Had one div with the psuedo elements for the top left and bottom right corner treatment, as well as a &#8220;shadow&#8221; element for each. In the end, 2 divs, and an img tag did the trick.</p>
-
-<div class="clearfix">
-<img class="left" src="http://2.bp.blogspot.com/-HmFBQC3udcU/Tc9tNlBmfyI/AAAAAAAABZQ/e5F6o4XmEMQ/s400/jambi.jpg" width="60">
-<img class="left" src="http://2.bp.blogspot.com/-HmFBQC3udcU/Tc9tNlBmfyI/AAAAAAAABZQ/e5F6o4XmEMQ/s400/jambi.jpg" width="60">    
-<img class="left" src="http://2.bp.blogspot.com/-HmFBQC3udcU/Tc9tNlBmfyI/AAAAAAAABZQ/e5F6o4XmEMQ/s400/jambi.jpg" width="60">
-<img class="left" src="http://2.bp.blogspot.com/-HmFBQC3udcU/Tc9tNlBmfyI/AAAAAAAABZQ/e5F6o4XmEMQ/s400/jambi.jpg" width="60">
-<img class="left" src="http://2.bp.blogspot.com/-HmFBQC3udcU/Tc9tNlBmfyI/AAAAAAAABZQ/e5F6o4XmEMQ/s400/jambi.jpg" width="60">
-</div>
-
-
-<!-- / -->
-
-
-
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/01/26/kitty-corners/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -819,95 +545,12 @@ console.log(&quot;tailpipe listening on port %d in %s mode&quot;, app.address().
 
 <p>Don&#8217;t you hate it when you find yourself debugging some weird CSS issue knowing full well you&#8217;ve solved the same exact problem in the past? I catch myself doing this all the time. I&#8217;m being a bit hard on myself. It&#8217;s not like I run into the same bug, project after project, failing to learn the solution. It&#8217;s more like&#8230; &#8220;Shit I remember this bug, it happened to me 9 months ago, I can&#8217;t remember how I fixed it back then. KKKKAAAAHHHHNNNNNNNN&#8221;.</p>
 
-<p>This just happened to me. Instead of repeating my same old pattern of &#8220;solve and forget&#8221; (devs love patterns), I decided to take some time to write about the bug and solution. Partly for you guys, but also for myself. Now I can always reference this blog post for the solution.</p>
-
-<p>Spoiler alert, after creating the reduced use case, the issue wasn&#8217;t what I originally thought it was.</p>
-
-<h3>Situation:</h3>
-
-<p>I have a simple horizontal navigation menu with drop down sub-menus. This menu also has a background gradient. Totally basic, &#8220;every website has it&#8221; kinda stuff.</p>
-
-<h3>The Issue I was having:</h3>
-
-<p>All was well in modern-browser-land, BUT, IE9 was DOM-barfing. For some reason, IE9 was giving me an effect similar to having &#8220;overflow: hidden;&#8221; on the containing nav element. Anything outside of this container (in my case, the sub-menus) were being cut off. So first thing I look for is the overflow, then the z-indexing, what the box is doing then, then, then, etc. until I start to cry QQ.</p>
-
-<h3>Solving the issue:</h3>
-
-<p>Chris Coyer has a great artice on <a href="http://css-tricks.com/reduced-test-cases/" target="_new">creating a reduced test case</a>. Remembering the gist of it, I opened up js-fiddle and started hacking away. I was pretty sure the filter: property was being the hooker in my code. I knew it was depricated these days, but whatevs. It ended up coming down to 3 CSS properties living on the same element. Those being:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>position: fixed;
-</span><span class='line'>z-index: 9999;
-</span><span class='line'>filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000');</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The filter BS jumped out at me right away. So I removed filter, and the content outside of the container was showing properly. The style became:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>position: fixed;
-</span><span class='line'>z-index: 9999;</span></code></pre></td></tr></table></div></figure>
-
-
-<p>For fun, I then pulled out the position: fixed. The style became:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>z-index: 9999;
-</span><span class='line'>filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000');</span></code></pre></td></tr></table></div></figure>
-
-
-<p>I had my gradient, and the z-indexing working! Nice! So I started blaming position: fixed and filter being together. I told all my friends about it and they were all &#8220;bro, so cool, let&#8217;s shoot red bull into our vains and snort some vodka&#8221;. Just for funsies, I removed the z-index but kept the position and filter on the element.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>position: fixed;
-</span><span class='line'>filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000');</span></code></pre></td></tr></table></div></figure>
-
-
-<p>IT WORKED! No z-index, but WTF! I told all my BFF&#8217;s about it and they cheered. More RB, vodka and badges to be had.</p>
-
-<p>So wanting the best of all 3 worlds, the simpliest solution I came up with was to wrap the nav bar in container element (don&#8217;t care which you use), and put position: rel and z-index on the container. I kept the position: fixed and filter on the nav. Everything worked great. WIN!</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>#brotainer {
-</span><span class='line'>    position: relative;
-</span><span class='line'>    z-index: 9999;
-</span><span class='line'>}
-</span><span class='line'>
-</span><span class='line'>#ie-hates-us {
-</span><span class='line'>    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000');
-</span><span class='line'>    position: fixed; 
-</span><span class='line'>/* This seems to break everything if you use z-index here, so use it on a container
-</span><span class='line'>    z-index: 9999;
-</span><span class='line'>*/
-</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Here&#8217;s the final fiddle:
-<a href="http://jsfiddle.net/tonyjcamp/eNr2M/" target="_new">My final answer</a></p>
-
-<p>And dudes, I learned a ton by coming up with this silly use case and writing an even sillier blog post about it. If you ever find yourself solving and issue you want to remember later, write a post! Hell, just fork this blog and write a post. I&#8217;ll add it.</p>
-
-<div class="clearfix">
-<img class="left" src="http://26.media.tumblr.com/tumblr_lvsjfjCEMw1qza249o1_400.jpg" width="256" height="381" title="Smart Dudes" alt="Say Smart Things">
-</div>
-
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2011/12/29/ms-filters-make-me-hate-life-memoirs-of-a-fe-ender/">Read on &rarr;</a>
+    </footer>
   
 
 

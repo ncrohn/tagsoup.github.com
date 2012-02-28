@@ -4,7 +4,7 @@
   <title>Phx Tag Soup</title>
   <link href="http://TagSoup.github.com/atom.xml" rel="self"/>
   <link href="http://TagSoup.github.com/"/>
-  <updated>2012-02-28T08:13:06-07:00</updated>
+  <updated>2012-02-28T09:22:19-07:00</updated>
   <id>http://TagSoup.github.com/</id>
   <author>
     <name>Phx Tag Soup</name>
@@ -17,7 +17,7 @@
     <link href="http://TagSoup.github.com/blog/2012/02/27/day-4-drunk-and-pushing-state/"/>
     <updated>2012-02-27T21:58:00-07:00</updated>
     <id>http://TagSoup.github.com/blog/2012/02/27/day-4-drunk-and-pushing-state</id>
-    <content type="html">&lt;p&gt;In the immortal words or Colonel Sanders, I&amp;#8217;m too drunk to write this blog post. But eff it (note: I don&amp;#8217;t know if Colonel Sanders said that part). Don&amp;#8217;t take this as a knock that I don&amp;#8217;t care about this blog post because I do. The HTML5 history API is one of my favorite things ever (and Tony Camp is one of my personal heroes). If the HTML5 history API (or Tony Camp) came up to me and said, &amp;#8220;Hey baby, I work to spec in all the latest browsers and degrade gracefully in the others. What are you doing later?&amp;#8221; I would say, &amp;#8220;Writing some code. See you later.&amp;#8221; I love it so much, I gave a talk about it at a previous &lt;a href=&quot;http://tagsoup.github.com/blog/2011/10/28/html5-history-api-with-luke-karrys/&quot;&gt;Tag Soup meetup&lt;/a&gt;. But here I am going to tell you how to convert your current Octopress blog into an Octopress blog that uses HTML5 pushState (and how to report bugs to me where I messed up, because I definitely did).&lt;/p&gt;
+    <content type="html">&lt;p&gt;In the immortal words &lt;del&gt;or&lt;/del&gt; &lt;em&gt;of&lt;/em&gt; Colonel Sanders, I&amp;#8217;m too drunk to write this blog post. But eff it (note: I don&amp;#8217;t know if Colonel Sanders said that part). Don&amp;#8217;t take this as a knock that I don&amp;#8217;t care about this blog post because I do. The HTML5 history API is one of my favorite things ever (and Tony Camp is one of my personal heroes). If the HTML5 history API (or Tony Camp) came up to me and said, &amp;#8220;Hey baby, I work to spec in all the latest browsers and degrade gracefully in the others. What are you doing later?&amp;#8221; I would say, &amp;#8220;Writing some code. See you later.&amp;#8221; I love it so much, I gave a talk about it at a previous &lt;a href=&quot;http://tagsoup.github.com/blog/2011/10/28/html5-history-api-with-luke-karrys/&quot;&gt;Tag Soup meetup&lt;/a&gt;. But here I am going to tell you how to convert your current Octopress blog into an Octopress blog that uses HTML5 pushState (and how to report bugs to me where I messed up, because I definitely did).&lt;/p&gt;
 
 &lt;!&#8211;more&#8211;&gt;
 
@@ -78,7 +78,7 @@
 
 &lt;p&gt;Next, we want to to use another method I yanked from Benjamin. This is enables us to run the ajaxify() function against jQuery objects. The only trick here, is the bug I talked about earlier. We have to separate the hash from the clicked url and pass it to the pushState event listener through the first parameter, which is a data object that can contain any arbitrary data.&lt;/p&gt;
 
-&lt;p&gt;Another note worth mentioning is the second parameter of the pushState method. That accepts a title for the new page, but as far as I know, no browsers support it. Also when using the &lt;code&gt;ajaxify&lt;/code&gt; function in this way, we don&amp;#8217;t know the full title of the next page at this junction. This could be rearranged, but since the browsers don&amp;#8217;t support it, I don&amp;#8217;t see much reason for doing so know (especially since we will update the title later).&lt;/p&gt;
+&lt;p&gt;Another note worth mentioning is the second parameter of the pushState method. That accepts a title for the new page, but as far as I know, no browsers support it. Also when using the &lt;code&gt;ajaxify&lt;/code&gt; function in this way, we don&amp;#8217;t know the full title of the next page at this junction. This could be rearranged, but since the browsers don&amp;#8217;t support it, I don&amp;#8217;t see much reason for doing so &lt;del&gt;know&lt;/del&gt; &lt;em&gt;now&lt;/em&gt; (especially since we will update the title later).&lt;/p&gt;
 
 &lt;figure class=&#8217;code&#8217;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre class=&quot;line-numbers&quot;&gt;&lt;span class=&#8217;line-number&#8217;&gt;1&lt;/span&gt;
 &lt;span class=&#8217;line-number&#8217;&gt;2&lt;/span&gt;
@@ -276,7 +276,7 @@
 
 &lt;p&gt;The only dynamic third-party JavaScript that inserts content on my blog are my gists. If you have other similar JavaScript on your blog, you may have to write some new code that does something similar.&lt;/p&gt;
 
-&lt;p&gt;For gists, the rub lies in where for each gist we include a script tag which write our code from GitHub to our page. This doesn&amp;#8217;t that well dynamically since it uses &lt;code&gt;document.write&lt;/code&gt;. When &lt;code&gt;document.write&lt;/code&gt; is used after the page is already loaded, is empties the content of the page, and inserts its new content. Pretty selfish, right? Well &lt;code&gt;document.write&lt;/code&gt; may be an asshole, but that&amp;#8217;s not the end of the world. I came up with a &lt;a href=&quot;https://github.com/lukekarrys/lukecod.es/blob/master/source/embed-gist.php&quot;&gt;server-side solution&lt;/a&gt; for my blog, which will take some URL parameters and fetch the gist HTML for you. Ben Nadel also came with a solution earlier this year that uses an iFrame to override the &lt;code&gt;document.write&lt;/code&gt; method. I love his way of doing it, because it all stays client-side, but I think the server-side method is a bit safer (since you aren&amp;#8217;t overriding browser method).&lt;/p&gt;
+&lt;p&gt;For gists, the rub lies in where for each gist we include a script tag which write our code from GitHub to our page. This doesn&amp;#8217;t &lt;em&gt;work&lt;/em&gt; that well dynamically since it uses &lt;code&gt;document.write&lt;/code&gt;. When &lt;code&gt;document.write&lt;/code&gt; is used after the page is already loaded, is empties the content of the page, and inserts its new content. Pretty selfish, right? Well &lt;code&gt;document.write&lt;/code&gt; may be an asshole, but that&amp;#8217;s not the end of the world. I came up with a &lt;a href=&quot;https://github.com/lukekarrys/lukecod.es/blob/master/source/embed-gist.php&quot;&gt;server-side solution&lt;/a&gt; for my blog, which will take some URL parameters and fetch the gist HTML for you. Ben Nadel also came with a solution earlier this year that uses an iFrame to override the &lt;code&gt;document.write&lt;/code&gt; method. I love his way of doing it, because it all stays client-side, but I think the server-side method is a bit safer (since you aren&amp;#8217;t overriding browser method).&lt;/p&gt;
 
 &lt;p&gt;In my method, I am locating any gists in the incoming HTML. If there are any, I ask my server-side script to supply me with the HTML for that gist. I am also pushing that result of that request (a JQuery Deferred object) to an array. Later I am asking that array to let me know when all of its gists have been loaded.&lt;/p&gt;
 
@@ -443,6 +443,9 @@
 &lt;p&gt;Enough words, how about some hawt pics?
 &lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/zsh.png&quot; width=&quot;800&quot;&gt;&lt;/p&gt;
 
+&lt;!&#8211;more&#8211;&gt;
+
+
 &lt;h4&gt;What are you staring at?&lt;/h4&gt;
 
 &lt;p&gt;Well, that&amp;#8217;s my desktop, with some icons, a nice desktop pic and of course my terminal. I like the way it all looks. How come your Terminal doesn&amp;#8217;t look like that? Maybe I can help. If you&amp;#8217;re running OSX Lion and haven&amp;#8217;t already switched the default bash shell to zsh, you might want to do that now. Why switch? There are a ton of articles out on google explaning why people like it so much. For me, it comes down to a few basic benefits:&lt;/p&gt;
@@ -607,6 +610,9 @@ export RPROMPT=$&#8217;%{\e[1;31m%}$(project_pwd)%{\e[0;34m%}$(ruby_version)$(gi
 
 &lt;p&gt;Whats a good strategy to follow? The first thing to know about SEO is that “Content is King”. Don’t try to chase algorithm changes in Google or Bing. Your time will be more productive if you concentrate on keeping good and relevant content on your site. Have good content and change it often. Good SEO will get people to your site but good content will keep them there and coming back.&lt;/p&gt;
 
+&lt;!&#8211;more&#8211;&gt;
+
+
 &lt;p&gt;Do your keyword research. Find out what people are searching for in your industry and integrate these into your content. The key word here is integrate not shoe-horn. Spammy content will just frustrate and confuse your visitors.&lt;/p&gt;
 
 &lt;p&gt;There are many gems that can come out of your keyword research. Imagine you run a ticketing website that does well for the Keyword “Bob Dylan Tickets”. You are doing your keyword research and notice that a lot of people are searching for Bob Dylan tickets in Minnesota. You can optimize your Bob Dylan page for Minnesota but that would change your rankings for your Bob Dylan results. Instead if you create a Bob Dylan Minnesota page with information specifically about the venues and performances by Dylan in Minnesota. This will allow you to keep your good standings in “Bob Dylan Tickets” results as well as getting you another page in the results that targeted that large demographic of visitors. A caveat to this is that you would want to use this sparingly. Too much of this and your content can become unmanageable.&lt;/p&gt;
@@ -682,6 +688,9 @@ Keep shorter URLs for friendlier crawling&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://TagSoup.github.com/images/undef-jams.png&quot; target=&quot;_new&quot;&gt;&lt;img class=&quot;left&quot; src=&quot;http://TagSoup.github.com/images/undef-jams.png&quot; width=&quot;800&quot; title=&quot;Undef&quot; alt=&quot;Jams&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;So I have a basic function inside of Chrome&amp;#8217;s console. When I press enter, I get the &amp;#8220;undefined&amp;#8221; msg. I haven&amp;#8217;t done anything though, so why the &amp;#8220;undefined&amp;#8221;? Javascript functions ALWAYS return a value. If you don&amp;#8217;t specify what it is, then it returns &amp;#8220;undefined&amp;#8221;. YAY!&lt;/p&gt;
+
+&lt;!&#8211;more&#8211;&gt;
+
 
 &lt;p&gt;If you would like a more elegant explanation, check out the ever useful, &lt;a href=&quot;http://stackoverflow.com/questions/903120/should-i-always-give-a-return-value-to-my-function/903126#903126&quot;&gt;Stack Overflow&lt;/a&gt;.&lt;/p&gt;
 
@@ -836,6 +845,9 @@ console.log(&amp;quot;tailpipe listening on port %d in %s mode&amp;quot;, app.ad
 
 &lt;p&gt;As developers, we&amp;#8217;re constantly trying to &amp;#8220;level-up&amp;#8221;. Becoming a better developer is all about writing code. A goofy, but fun exercise I do from time to time involves browsing &lt;a href=&quot;http://www.dribbble.com&quot; target=&quot;_new&quot;/&gt;dribbble&lt;/a&gt;. I browse some of the great pieces of art on there and try to emulate it with CSS. I came across a piece by &lt;a href=&quot;http://dribbble.com/larrychen&quot; target=&quot;_new&quot;&gt;Larry Chen&lt;/a&gt; called &lt;a href=&quot;http://dribbble.com/shots/118282-Photo-Border-Style&quot; target=&quot;_new&quot;&gt;Photo Border Style&lt;/a&gt;. I figured I could whip up that border treatment pretty easily.&lt;/p&gt;
 
+&lt;!&#8211;more&#8211;&gt;
+
+
 &lt;p&gt;I knew &lt;a href=&quot;http://css-tricks.com/pseudo-element-roundup/&quot; target=&quot;_new&quot;&gt;CSS pseudo elements&lt;/a&gt; would be necessary. I had seen a couple of blog posts showing how to manipulate css borders to make triangles &lt;a href=&quot;http://www.russellheimlich.com/blog/pure-css-shapes-triangles-delicious-logo-and-hearts/&quot; target=&quot;_new&quot;&gt;(like this one)&lt;/a&gt;. I figured I would just toss a :before and :after pseudo element on the image and get a nice start on my border treatment.&lt;/p&gt;
 
 &lt;h3&gt;&lt;a href=&quot;http://jsfiddle.net/tonyjcamp/rATuB/&quot; target=&quot;_new&quot;&gt;Snag #1&lt;/a&gt;&lt;/h3&gt;
@@ -934,6 +946,9 @@ console.log(&amp;quot;tailpipe listening on port %d in %s mode&amp;quot;, app.ad
 &lt;p&gt;&lt;a href=&quot;http://jsfiddle.net/tonyjcamp/eNr2M/&quot; target=&quot;_new&quot;/&gt;TL;DR - Gimmie Solution&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Don&amp;#8217;t you hate it when you find yourself debugging some weird CSS issue knowing full well you&amp;#8217;ve solved the same exact problem in the past? I catch myself doing this all the time. I&amp;#8217;m being a bit hard on myself. It&amp;#8217;s not like I run into the same bug, project after project, failing to learn the solution. It&amp;#8217;s more like&amp;#8230; &amp;#8220;Shit I remember this bug, it happened to me 9 months ago, I can&amp;#8217;t remember how I fixed it back then. KKKKAAAAHHHHNNNNNNNN&amp;#8221;.&lt;/p&gt;
+
+&lt;!&#8211;more&#8211;&gt;
+
 
 &lt;p&gt;This just happened to me. Instead of repeating my same old pattern of &amp;#8220;solve and forget&amp;#8221; (devs love patterns), I decided to take some time to write about the bug and solution. Partly for you guys, but also for myself. Now I can always reference this blog post for the solution.&lt;/p&gt;
 
@@ -1149,6 +1164,9 @@ Our friends in Las Vegas have been busy writing an iOS app called &lt;a href=&qu
 &lt;p&gt;Who are we? The answer is simple. We&amp;#8217;re a group developers (client side, server side and even UX/UI side) in the Phoenix area. We all love the interactive space. We also want to make the web more fun.&lt;/p&gt;
 
 &lt;p&gt;Why Phx Tag Soup exists&amp;#8230; This one requires a bit of back story, so hang with me. Inspiration is a great side effect of being a developer. It doesn&amp;#8217;t matter which part of the web you&amp;#8217;re working on, there&amp;#8217;s so much great shit out there you can&amp;#8217;t help but be inspired. Most developers have favorite blogs, favorite people to follow on the various social media outlets etc&amp;#8230; While it stops there for a lot of developers, those that look further get rewarded. It&amp;#8217;s weird to think that &amp;#8220;looking further for inspiration&amp;#8221; means looking in non-digital outlets. GASP, real life! Conferences can be life changing. And the answer to &amp;#8220;why Tag Soup exists&amp;#8221; is a conference.&lt;/p&gt;
+
+&lt;!&#8211;more&#8211;&gt;
+
 
 &lt;p&gt;Three of us went to TXJS, a javascript conference put on by some #bada55 javascript developers. This is considered a &amp;#8220;small&amp;#8221; conference. Roughly 150 tickets are sold. Keeping the ticket sales low, the small crowd makes for BIG atmosphere. Everyone at TXJS was really nice. Like out of their way kind of nice. You could fell comfortable approaching anyone there. Including Douglas Crockford, Brenden Eich, Paul Irish, Yahuda Katz and so on. I remember walking past Papa Crock in the stair well of the theatre and telling him I liked his talk. He seemed genuinely happy to hear that and we went on to talk a bit more about JS in general. Later, I walked up to Brenden Eich and asked what he thought about Coffee Script. He told me his thoughts and I walked away thinking&amp;#8230; holy shit, that&amp;#8217;s the dude that wrote JS in 10 days. 10 days! I can&amp;#8217;t even write a decent blog post in 10 days. I can go on with stories like this, but let&amp;#8217;s get back to the point of this post.&lt;/p&gt;
 

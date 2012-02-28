@@ -9,7 +9,7 @@
   <meta name="author" content="Phx Tag Soup">
 
   
-  <meta name="description" content="In the immortal words or Colonel Sanders, I&#8217;m too drunk to write this blog post. But eff it (note: I don&#8217;t know if Colonel Sanders said &hellip;">
+  <meta name="description" content="In the immortal words or of Colonel Sanders, I&#8217;m too drunk to write this blog post. But eff it (note: I don&#8217;t know if Colonel Sanders &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -87,7 +87,7 @@
   </header>
 
 
-<div class="entry-content"><p>In the immortal words or Colonel Sanders, I&#8217;m too drunk to write this blog post. But eff it (note: I don&#8217;t know if Colonel Sanders said that part). Don&#8217;t take this as a knock that I don&#8217;t care about this blog post because I do. The HTML5 history API is one of my favorite things ever (and Tony Camp is one of my personal heroes). If the HTML5 history API (or Tony Camp) came up to me and said, &#8220;Hey baby, I work to spec in all the latest browsers and degrade gracefully in the others. What are you doing later?&#8221; I would say, &#8220;Writing some code. See you later.&#8221; I love it so much, I gave a talk about it at a previous <a href="http://tagsoup.github.com/blog/2011/10/28/html5-history-api-with-luke-karrys/">Tag Soup meetup</a>. But here I am going to tell you how to convert your current Octopress blog into an Octopress blog that uses HTML5 pushState (and how to report bugs to me where I messed up, because I definitely did).</p>
+<div class="entry-content"><p>In the immortal words <del>or</del> <em>of</em> Colonel Sanders, I&#8217;m too drunk to write this blog post. But eff it (note: I don&#8217;t know if Colonel Sanders said that part). Don&#8217;t take this as a knock that I don&#8217;t care about this blog post because I do. The HTML5 history API is one of my favorite things ever (and Tony Camp is one of my personal heroes). If the HTML5 history API (or Tony Camp) came up to me and said, &#8220;Hey baby, I work to spec in all the latest browsers and degrade gracefully in the others. What are you doing later?&#8221; I would say, &#8220;Writing some code. See you later.&#8221; I love it so much, I gave a talk about it at a previous <a href="http://tagsoup.github.com/blog/2011/10/28/html5-history-api-with-luke-karrys/">Tag Soup meetup</a>. But here I am going to tell you how to convert your current Octopress blog into an Octopress blog that uses HTML5 pushState (and how to report bugs to me where I messed up, because I definitely did).</p>
 
 <!--more-->
 
@@ -148,7 +148,7 @@
 
 <p>Next, we want to to use another method I yanked from Benjamin. This is enables us to run the ajaxify() function against jQuery objects. The only trick here, is the bug I talked about earlier. We have to separate the hash from the clicked url and pass it to the pushState event listener through the first parameter, which is a data object that can contain any arbitrary data.</p>
 
-<p>Another note worth mentioning is the second parameter of the pushState method. That accepts a title for the new page, but as far as I know, no browsers support it. Also when using the <code>ajaxify</code> function in this way, we don&#8217;t know the full title of the next page at this junction. This could be rearranged, but since the browsers don&#8217;t support it, I don&#8217;t see much reason for doing so know (especially since we will update the title later).</p>
+<p>Another note worth mentioning is the second parameter of the pushState method. That accepts a title for the new page, but as far as I know, no browsers support it. Also when using the <code>ajaxify</code> function in this way, we don&#8217;t know the full title of the next page at this junction. This could be rearranged, but since the browsers don&#8217;t support it, I don&#8217;t see much reason for doing so <del>know</del> <em>now</em> (especially since we will update the title later).</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -346,7 +346,7 @@
 
 <p>The only dynamic third-party JavaScript that inserts content on my blog are my gists. If you have other similar JavaScript on your blog, you may have to write some new code that does something similar.</p>
 
-<p>For gists, the rub lies in where for each gist we include a script tag which write our code from GitHub to our page. This doesn&#8217;t that well dynamically since it uses <code>document.write</code>. When <code>document.write</code> is used after the page is already loaded, is empties the content of the page, and inserts its new content. Pretty selfish, right? Well <code>document.write</code> may be an asshole, but that&#8217;s not the end of the world. I came up with a <a href="https://github.com/lukekarrys/lukecod.es/blob/master/source/embed-gist.php">server-side solution</a> for my blog, which will take some URL parameters and fetch the gist HTML for you. Ben Nadel also came with a solution earlier this year that uses an iFrame to override the <code>document.write</code> method. I love his way of doing it, because it all stays client-side, but I think the server-side method is a bit safer (since you aren&#8217;t overriding browser method).</p>
+<p>For gists, the rub lies in where for each gist we include a script tag which write our code from GitHub to our page. This doesn&#8217;t <em>work</em> that well dynamically since it uses <code>document.write</code>. When <code>document.write</code> is used after the page is already loaded, is empties the content of the page, and inserts its new content. Pretty selfish, right? Well <code>document.write</code> may be an asshole, but that&#8217;s not the end of the world. I came up with a <a href="https://github.com/lukekarrys/lukecod.es/blob/master/source/embed-gist.php">server-side solution</a> for my blog, which will take some URL parameters and fetch the gist HTML for you. Ben Nadel also came with a solution earlier this year that uses an iFrame to override the <code>document.write</code> method. I love his way of doing it, because it all stays client-side, but I think the server-side method is a bit safer (since you aren&#8217;t overriding browser method).</p>
 
 <p>In my method, I am locating any gists in the incoming HTML. If there are any, I ask my server-side script to supply me with the HTML for that gist. I am also pushing that result of that request (a JQuery Deferred object) to an array. Later I am asking that array to let me know when all of its gists have been loaded.</p>
 
