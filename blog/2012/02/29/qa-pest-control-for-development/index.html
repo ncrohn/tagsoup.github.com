@@ -105,10 +105,10 @@
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Require</span> <span class="err">‘</span><span class="n">rubygems</span><span class="err">’</span>
-</span><span class='line'><span class="no">Require</span> <span class="err">‘</span><span class="n">selenium</span><span class="o">-</span><span class="n">webdriver</span><span class="err">’</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="err">‘</span><span class="n">rubygems</span><span class="err">’</span>
+</span><span class='line'><span class="nb">require</span> <span class="err">‘</span><span class="n">selenium</span><span class="o">-</span><span class="n">webdriver</span><span class="err">’</span>
 </span><span class='line'>
-</span><span class='line'><span class="no">Driver</span> <span class="o">=</span> <span class="no">Selenium</span><span class="o">::</span><span class="no">Webdriver</span><span class="o">.</span><span class="n">for</span> <span class="ss">:firefox</span>
+</span><span class='line'><span class="no">Driver</span> <span class="o">=</span> <span class="no">Selenium</span><span class="o">::</span><span class="no">WebDriver</span><span class="o">.</span><span class="n">for</span> <span class="ss">:firefox</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -125,7 +125,7 @@
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">workLink</span> <span class="o">=</span> <span class="no">Driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="ss">:link_text</span><span class="p">,</span> <span class="err">‘</span><span class="no">Work</span><span class="err">’</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">workLink</span> <span class="o">=</span> <span class="no">Driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="ss">:link_text</span><span class="p">,</span> <span class="err">‘</span><span class="no">Work</span><span class="err">’</span><span class="p">)</span>
 </span><span class='line'><span class="n">workLink</span><span class="o">.</span><span class="n">click</span>
 </span></code></pre></td></tr></table></div></figure>
 
@@ -137,11 +137,11 @@
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">If</span> <span class="n">driver</span><span class="o">.</span><span class="n">title</span> <span class="o">!=</span> <span class="err">‘</span><span class="no">Meltmedia</span> <span class="err">–</span> <span class="no">Our</span> <span class="n">portfolio</span> <span class="n">of</span> <span class="n">client</span> <span class="n">work</span><span class="err">’</span>
-</span><span class='line'>  <span class="no">Puts</span> <span class="err">‘</span><span class="no">Work</span>  <span class="n">link</span> <span class="n">failed</span> <span class="n">to</span> <span class="n">function</span> <span class="n">properly</span><span class="err">’</span>
-</span><span class='line'><span class="no">Else</span>
-</span><span class='line'>  <span class="no">Puts</span> <span class="err">‘</span><span class="no">Work</span> <span class="n">link</span> <span class="n">functioned</span> <span class="n">properly</span><span class="err">’</span>
-</span><span class='line'><span class="no">End</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">if</span> <span class="no">Driver</span><span class="o">.</span><span class="n">title</span> <span class="o">!=</span> <span class="err">‘</span><span class="no">Meltmedia</span> <span class="err">–</span> <span class="no">Our</span> <span class="n">portfolio</span> <span class="n">of</span> <span class="n">client</span> <span class="n">work</span><span class="err">’</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="err">‘</span><span class="no">Work</span>  <span class="n">link</span> <span class="n">failed</span> <span class="n">to</span> <span class="n">function</span> <span class="n">properly</span><span class="err">’</span>
+</span><span class='line'><span class="k">else</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="err">‘</span><span class="no">Work</span> <span class="n">link</span> <span class="n">functioned</span> <span class="n">properly</span><span class="err">’</span>
+</span><span class='line'><span class="k">end</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
